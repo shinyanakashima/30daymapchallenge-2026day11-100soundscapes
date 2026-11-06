@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The 100 Soundscapes of Japan: a sound calendar</title>
+<meta name="description" content="Map of the 100 Soundscapes of Japan selected in 1996, month by month. #30DayMapChallenge 2026 Day 11 Senses: Sound.">
+<meta property="og:title" content="The 100 Soundscapes of Japan: a sound calendar">
+<meta property="og:description" content="Map of the 100 Soundscapes of Japan selected in 1996, month by month.">
+<meta property="og:image" content="docs/screenshot.png">
+<meta name="theme-color" content="#0f141b">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="map" role="region" aria-label="Map"></div>
+
+<header class="panel title-panel">
+  <div class="title-row">
+    <h1>
+      <span class="t-main" data-i18n="title">The 100 Soundscapes of Japan</span>
+      <span class="t-sub" data-i18n="subtitle">a sound calendar</span>
+    </h1>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+    </div>
+  </div>
+  <p class="lead" data-i18n="lead">In 1996 Japan's Environment Agency chose 100 sounds that communities wanted to keep. Pick a month to see which ones you can hear.</p>
+  <div class="filters" role="group" aria-label="Sound type" data-i18n-aria="filterLabel">
+    <button type="button" class="chip" data-cat="living" aria-pressed="true"><i class="sw living"></i><span data-i18n="cat_living">Living things</span> <b class="n" data-n="living"></b></button>
+    <button type="button" class="chip" data-cat="water" aria-pressed="true"><i class="sw water"></i><span data-i18n="cat_water">Water</span> <b class="n" data-n="water"></b></button>
+    <button type="button" class="chip" data-cat="people" aria-pressed="true"><i class="sw people"></i><span data-i18n="cat_people">People</span> <b class="n" data-n="people"></b></button>
+  </div>
+  <div class="legend">
+    <span class="lg"><i class="lg-pulse"></i><span data-i18n="lg_season">In season this month</span></span>
+    <span class="lg"><i class="lg-year"></i><span data-i18n="lg_year">Year-round</span></span>
+    <span class="lg"><i class="lg-off"></i><span data-i18n="lg_off">Other months</span></span>
+  </div>
+  <button type="button" class="about-btn" aria-expanded="false" aria-controls="about" data-i18n="about">About &amp; notes</button>
+</header>
+
+<aside class="panel count-panel" aria-live="polite">
+  <div class="count-month" id="countMonth">November</div>
+  <div class="count-big"><span id="countTotal">0</span><span class="count-unit" data-i18n="countUnit">sounds</span></div>
+  <div class="count-break" id="countBreak"></div>
+</aside>
+
+<section class="panel time-panel" aria-label="Month">
+  <button type="button" id="play" class="play" aria-pressed="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="i-play"><path d="M8 5v14l11-7z"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="i-pause"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+    <span class="sr" data-i18n="play">Play months</span>
+  </button>
+  <div class="slider-wrap">
+    <input type="range" id="month" min="1" max="12" step="1" value="11" aria-label="Month">
+    <div class="ticks" id="ticks" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section id="card" class="panel card" hidden aria-live="polite">
+  <button type="button" class="close" id="cardClose" aria-label="Close">×</button>
+  <div class="card-cat" id="cardCat"></div>
+  <h2 id="cardName"></h2>
+  <div class="card-alt" id="cardAlt"></div>
+  <div class="card-place" id="cardPlace"></div>
+  <div class="card-months" id="cardMonths" aria-hidden="true"></div>
+  <div class="card-when" id="cardWhen"></div>
+  <p class="card-desc" id="cardDesc"></p>
+  <div class="card-loc" id="cardLoc"></div>
+</section>
+
+<section id="about" class="panel about" hidden>
+  <button type="button" class="close" id="aboutClose" aria-label="Close">×</button>
+  <div class="about-body" id="aboutBody"></div>
+</section>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
