@@ -218,23 +218,37 @@
           paint: {
             'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 7, 8, 11],
             'circle-color': catColor(),
-            'circle-opacity': ['case', H, 0, ['==', S, 1], 0.14, ['==', S, 2], 0.22, 0],
+            'circle-opacity': ['case', H, 0, ['==', S, 1], 0.14, 0],
             'circle-blur': 0.6
           }
         });
-        // ripples (3 rings, animated)
-        for (var k = 0; k < 3; k++) {
+        // soft light that spreads out with each wave
+        map.addLayer({
+          id: 'bloom', type: 'circle', source: 'pts',
+          paint: { 'circle-radius': 0, 'circle-color': catColor(), 'circle-opacity': 0, 'circle-blur': 1 }
+        });
+        // ripples: a sharp ring plus a wide faint ring around it for glow
+        for (var k = 0; k < RINGS; k++) {
+          map.addLayer({
+            id: 'rglow' + k, type: 'circle', source: 'pts',
+            paint: {
+              'circle-radius': 0, 'circle-color': 'rgba(0,0,0,0)', 'circle-blur': 0.5,
+              'circle-stroke-color': catColor(), 'circle-stroke-width': 6, 'circle-stroke-opacity': 0
+            }
+          });
           map.addLayer({
             id: 'ripple' + k, type: 'circle', source: 'pts',
             paint: {
-              'circle-radius': 6,
-              'circle-color': 'rgba(0,0,0,0)',
-              'circle-stroke-color': catColor(),
-              'circle-stroke-width': 1.4,
-              'circle-stroke-opacity': 0
+              'circle-radius': 0, 'circle-color': 'rgba(0,0,0,0)',
+              'circle-stroke-color': catColor(), 'circle-stroke-width': 1.5, 'circle-stroke-opacity': 0
             }
           });
         }
+        // glowing core that flares each time a wave is sent out
+        map.addLayer({
+          id: 'core', type: 'circle', source: 'pts',
+          paint: { 'circle-radius': 10, 'circle-color': catColor(), 'circle-opacity': 0, 'circle-blur': 1 }
+        });
         map.addLayer({
           id: 'dot', type: 'circle', source: 'pts',
           paint: {
@@ -306,6 +320,7 @@
 
   function setMonth(m) {
     state.month = ((m - 1 + 12) % 12) + 1;
+    lastMonthChange = performance.now();
     applyMonth();
   }
 
@@ -466,31 +481,89 @@
 
   // ---------- ripple animation ----------
   var rafId = null;
-  var PERIOD = 2400;
-  function ringPaint(phase) {
-    // radius grows, opacity fades
-    var r = 5 + phase * 20;
-    var o = Math.pow(1 - phase, 1.6) * 0.9;
-    return { r: r, o: o };
+  var RINGS = 3;          // rings in flight per point
+  var GROUPS = 5;         // points are split into groups so they do not pulse in step
+  var PERIOD = 3600;      // ms for one ring to grow and vanish
+  var lastMonthChange = -1e9;
+  var ACTIVE = ['all', ['==', S, 2], ['!', H]];
+  var GROUP = ['%', ['get', 'id'], GROUPS];
+
+  function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+  function zoomScale() {
+    var z = map.getZoom();
+    return Math.max(0.55, Math.min(2.2, Math.pow(2, (z - 4.6) * 0.45)));
   }
-  function setRing(k, r, o) {
-    var vis = ['all', ['==', S, 2], ['!', H]];
-    map.setPaintProperty('ripple' + k, 'circle-radius', r);
-    map.setPaintProperty('ripple' + k, 'circle-stroke-opacity', ['case', vis, o, 0]);
+  function byGroup(values) {
+    var e = ['match', GROUP];
+    for (var g = 0; g < GROUPS - 1; g++) e.push(g, values[g]);
+    e.push(values[GROUPS - 1]);
+    return e;
   }
+  // zero for points not in season, so hidden points draw nothing (keeps GPU load low)
+  function only(expr) { return ['case', ACTIVE, expr, 0]; }
+
+  var paintCache = {};
+  function paint(layer, prop, value) {
+    var key = layer + '|' + prop;
+    var str = JSON.stringify(value);
+    if (paintCache[key] === str) return;
+    paintCache[key] = str;
+    map.setPaintProperty(layer, prop, value);
+  }
+  var lastFrame = 0;
   function frame(ts) {
-    for (var k = 0; k < 3; k++) {
-      var phase = ((ts / PERIOD) + k / 3) % 1;
-      var p = ringPaint(phase);
-      setRing(k, p.r, p.o);
-    }
     rafId = requestAnimationFrame(frame);
+    if (ts - lastFrame < 32) return;
+    lastFrame = ts;
+    var sc = zoomScale();
+    var maxR = 46 * sc;
+    var burst = Math.max(0, 1 - (ts - lastMonthChange) / 900);
+    for (var k = 0; k < RINGS; k++) {
+      var r = [], o = [], w = [], go = [];
+      for (var g = 0; g < GROUPS; g++) {
+        var ph = ((ts / PERIOD) + k / RINGS + g * 0.37) % 1;
+        var e = easeOut(ph);
+        var fade = Math.pow(1 - ph, 2.2);
+        r.push(+(4 + e * maxR).toFixed(1));
+        o.push(+(fade * 0.95).toFixed(3));
+        w.push((0.4 + 2.6 * (1 - ph)) * Math.min(sc, 1.4));
+        go.push(+(fade * 0.3).toFixed(3));
+      }
+      paint('ripple' + k, 'circle-radius', only(byGroup(r)));
+      paint('ripple' + k, 'circle-stroke-width', byGroup(w));
+      paint('ripple' + k, 'circle-stroke-opacity', only(byGroup(o)));
+      paint('rglow' + k, 'circle-radius', only(byGroup(r)));
+      paint('rglow' + k, 'circle-stroke-width', byGroup(w.map(function (x) { return x * 2.2 + 2; })));
+      paint('rglow' + k, 'circle-stroke-opacity', only(byGroup(go)));
+    }
+    // bloom follows the newest ring of each group; core flares when a ring is born
+    var br = [], bo = [], cr = [], co = [];
+    for (var g2 = 0; g2 < GROUPS; g2++) {
+      var p0 = ((ts / PERIOD) * RINGS + g2 * 0.37 * RINGS) % 1;
+      br.push(6 + easeOut(p0) * maxR * 0.55);
+      bo.push(Math.pow(1 - p0, 1.5) * 0.28);
+      cr.push((9 + 5 * Math.pow(1 - p0, 2)) * Math.min(sc, 1.6) * (1 + burst * 1.2));
+      co.push(Math.min(0.95, 0.35 + 0.45 * Math.pow(1 - p0, 3) + burst * 0.5));
+    }
+    paint('bloom', 'circle-radius', only(byGroup(br)));
+    paint('bloom', 'circle-opacity', only(byGroup(bo)));
+    paint('core', 'circle-radius', only(byGroup(cr)));
+    paint('core', 'circle-opacity', only(byGroup(co)));
   }
   function drawStatic() {
     if (!map.getLayer('ripple0')) return;
-    setRing(0, 9, 0.6);
-    setRing(1, 14, 0.3);
-    setRing(2, 0, 0);
+    paintCache = {};
+    var radii = [10, 18, 0];
+    var ops = [0.7, 0.35, 0];
+    for (var k = 0; k < RINGS; k++) {
+      map.setPaintProperty('ripple' + k, 'circle-radius', only(radii[k] || 0));
+      map.setPaintProperty('ripple' + k, 'circle-stroke-width', 1.4);
+      map.setPaintProperty('ripple' + k, 'circle-stroke-opacity', only(ops[k] || 0));
+      map.setPaintProperty('rglow' + k, 'circle-stroke-opacity', 0);
+    }
+    map.setPaintProperty('bloom', 'circle-opacity', 0);
+    map.setPaintProperty('core', 'circle-radius', only(10));
+    map.setPaintProperty('core', 'circle-opacity', only(0.4));
   }
   function startAnimation() {
     if (rafId) cancelAnimationFrame(rafId);
