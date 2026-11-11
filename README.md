@@ -50,7 +50,7 @@ Year-round: 53. Seasonal sounds by month (including year-round): highest in July
 | `months_estimated` | `true` if the months were inferred from wording such as "autumn" or "early summer" |
 | `description_ja` / `description_en` | Short description written for this map (1–2 sentences) |
 
-`data/japan-land.geojson` is the land outline of Japan extracted from Natural Earth 1:10m countries.
+`data/japan-land.geojson` is the land outline of Japan extracted from Natural Earth 1:10m countries. `data/japan-sea-mask.geojson` is its inverse, used to keep the blank-map tiles on land only.
 
 ### How the data was made
 
@@ -74,6 +74,7 @@ Year-round: 53. Seasonal sounds by month (including year-round): highest in July
 - Base map: 地理院タイル 白地図 (GSI Tiles, blank map), Geospatial Information Authority of Japan. https://maps.gsi.go.jp/development/ichiran.html
 - Base map: Natural Earth (public domain), via world-atlas 2.0.2. https://www.naturalearthdata.com/
 - Map library: MapLibre GL JS 4.7.1
+- Colour palette: taken from the [Mapterhorn](https://mapterhorn.com/) logo
 
 ---
 
@@ -106,6 +107,7 @@ Year-round: 53. Seasonal sounds by month (including year-round): highest in July
 
 - 環境省「残したい“日本の音風景100選”」（概要・パンフレット）
 - 背景地図：地理院タイル（白地図）、Natural Earth
+- 配色：[Mapterhorn](https://mapterhorn.com/) のロゴの色
 
 ## License
 
