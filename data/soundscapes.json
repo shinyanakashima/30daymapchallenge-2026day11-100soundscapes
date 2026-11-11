@@ -28,7 +28,7 @@
     "note_ja": "鐘・祭り・乗り物・仕事の音"
    }
   },
-  "fields_note_ja": "months は聞ける月（1〜12）。all_year=true は通年。months_estimated=true はパンフレットの記述から読み替えたもの。location_type=area は範囲が広く代表点を置いたもの。"
+  "fields_note_ja": "image はWikipedia／Wikimedia Commonsの自由ライセンス画像（地点そのものではなく関連する対象の写真の場合あり）。months は聞ける月（1〜12）。all_year=true は通年。months_estimated=true はパンフレットの記述から読み替えたもの。location_type=area は範囲が広く代表点を置いたもの。"
  },
  "items": [
   {
@@ -55,7 +55,17 @@
    "months_basis_ja": "1月下旬から3月中旬",
    "months_estimated": false,
    "description_ja": "1月下旬から南から流れ着く流氷が、きしみ合って低い音を立てる。北の海の冬を告げる音。",
-   "description_en": "From late January, drift ice packs against the shore and grinds with creaks and groans, the sound of winter on the northern sea."
+   "description_en": "From late January, drift ice packs against the shore and grinds with creaks and groans, the sound of winter on the northern sea.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/JRH_Senmo-main-line_Kiha40_Drift-ice.jpg/960px-JRH_Senmo-main-line_Kiha40_Drift-ice.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:JRH_Senmo-main-line_Kiha40_Drift-ice.jpg",
+    "file": "JRH Senmo-main-line Kiha40 Drift-ice.jpg",
+    "artist": "MaedaAkihiko",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 2,
@@ -90,7 +100,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "1881年に旧札幌農学校演武場に据えられた時計の鐘が、今も時を告げる。",
-   "description_en": "The bell installed in the old Sapporo Agricultural College drill hall in 1881 still strikes the hours."
+   "description_en": "The bell installed in the old Sapporo Agricultural College drill hall in 1881 still strikes the hours.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/20200119_Sapporo_Clock_Tower.jpg/960px-20200119_Sapporo_Clock_Tower.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:20200119_Sapporo_Clock_Tower.jpg",
+    "file": "20200119 Sapporo Clock Tower.jpg",
+    "artist": "Balon Greyjoy",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "via": "wikipedia",
+    "article_ja": "札幌市時計台"
+   }
   },
   {
    "id": 3,
@@ -125,7 +145,17 @@
    "months_basis_ja": "土曜日の17時と日曜日の10時",
    "months_estimated": false,
    "description_ja": "大小6つの鐘が土曜の夕方と日曜の朝に鳴り、「ガンガン寺」の愛称で親しまれてきた。",
-   "description_en": "Six bells of different sizes ring on Saturday evenings and Sunday mornings; locals nicknamed the church \"Gangan-dera\" after the sound."
+   "description_en": "Six bells of different sizes ring on Saturday evenings and Sunday mornings; locals nicknamed the church \"Gangan-dera\" after the sound.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Hakodate_Orthodox_Church_in_snow_20231224a.jpg/960px-Hakodate_Orthodox_Church_in_snow_20231224a.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Hakodate_Orthodox_Church_in_snow_20231224a.jpg",
+    "file": "Hakodate Orthodox Church in snow 20231224a.jpg",
+    "artist": "掬茶",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "函館ハリストス正教会"
+   }
   },
   {
    "id": 4,
@@ -151,7 +181,17 @@
    "months_basis_ja": "4月から6月末の早朝",
    "months_estimated": false,
    "description_ja": "旭岳の山麓の探勝路で、ナキウサギや夏鳥の声が聞こえる。とくに初夏の早朝がよい。",
-   "description_en": "Along the nature trail at the foot of Asahidake, pikas and summer birds call, best on early mornings in late spring."
+   "description_en": "Along the nature trail at the foot of Asahidake, pikas and summer birds call, best on early mornings in late spring.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/140724_Asahi-dake_Hokkaido_Japan01s3.jpg/960px-140724_Asahi-dake_Hokkaido_Japan01s3.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:140724_Asahi-dake_Hokkaido_Japan01s3.jpg",
+    "file": "140724 Asahi-dake Hokkaido Japan01s3.jpg",
+    "artist": "663highland",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "via": "wikipedia",
+    "article_ja": "旭岳"
+   }
   },
   {
    "id": 5,
@@ -180,7 +220,17 @@
    "months_basis_ja": "10月下旬から翌年3月中旬",
    "months_estimated": false,
    "description_ja": "冬の給餌場に数百羽のタンチョウが集まり、つがいの鳴き交わしが響く。",
-   "description_en": "In winter, hundreds of red-crowned cranes gather at the feeding ground, and pairs call to each other in duet."
+   "description_en": "In winter, hundreds of red-crowned cranes gather at the feeding ground, and pairs call to each other in duet.",
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Mandschurenkranich.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Mandschurenkranich.jpg",
+    "file": "Mandschurenkranich.jpg",
+    "artist": "Wikimedia Commons",
+    "license": "CC BY-SA 2.0 de",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+    "via": "wikipedia",
+    "article_ja": "タンチョウ"
+   }
   },
   {
    "id": 6,
@@ -208,7 +258,17 @@
    "months_basis_ja": "3月から7月ごろ",
    "months_estimated": false,
    "description_ja": "繁殖地の蕪島に3万羽を超えるウミネコが集まり、猫のような鳴き声が港に響く。",
-   "description_en": "Over 30,000 black-tailed gulls breed on Kabushima island, filling the harbor with their cat-like mewing."
+   "description_en": "Over 30,000 black-tailed gulls breed on Kabushima island, filling the harbor with their cat-like mewing.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Kabushima%2C_-8_May_2010_a.jpg/960px-Kabushima%2C_-8_May_2010_a.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kabushima,_-8_May_2010_a.jpg",
+    "file": "Kabushima, -8 May 2010 a.jpg",
+    "artist": "張振",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "蕪島"
+   }
   },
   {
    "id": 7,
@@ -234,7 +294,17 @@
    "months_basis_ja": "5月下旬から7月下旬",
    "months_estimated": false,
    "description_ja": "初夏の湖畔の草原で、オオセッカやコジュリンなど珍しい鳥がさえずる。",
-   "description_en": "In the early summer grasslands by the lake, rare birds such as the Japanese marsh warbler sing."
+   "description_en": "In the early summer grasslands by the lake, rare birds such as the Japanese marsh warbler sing.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/%E4%BB%8F%E6%B2%BC_%E9%A2%A8%E6%99%AF.JPG/960px-%E4%BB%8F%E6%B2%BC_%E9%A2%A8%E6%99%AF.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BB%8F%E6%B2%BC_%E9%A2%A8%E6%99%AF.JPG",
+    "file": "仏沼 風景.JPG",
+    "artist": "あおもりくま ( Aomorikuma )",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "仏沼"
+   }
   },
   {
    "id": 8,
@@ -263,7 +333,17 @@
    "months_basis_ja": "5月から10月",
    "months_estimated": false,
    "description_ja": "十和田湖から流れ出る14kmの渓流。せせらぎと岩と森が一体になった音風景。",
-   "description_en": "A 14 km mountain stream flowing out of Lake Towada, where murmuring water, rocks and forest blend into one soundscape."
+   "description_en": "A 14 km mountain stream flowing out of Lake Towada, where murmuring water, rocks and forest blend into one soundscape.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Oirase-keiryu.jpg/960px-Oirase-keiryu.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Oirase-keiryu.jpg",
+    "file": "Oirase-keiryu.jpg",
+    "artist": "MaedaAkihiko",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "奥入瀬渓流"
+   }
   },
   {
    "id": 9,
@@ -287,7 +367,17 @@
    "months_basis_ja": "8月1日〜7日",
    "months_estimated": false,
    "description_ja": "8月上旬、「ラッセラー」「ヤーヤドー」の掛け声に太鼓と笛が重なる東北の夏祭り。",
-   "description_en": "In early August, chants of \"Rassera\" and \"Yayado\" mix with drums and flutes in these summer festivals."
+   "description_en": "In early August, chants of \"Rassera\" and \"Yayado\" mix with drums and flutes in these summer festivals.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Tohoku_epco_n1.jpg/960px-Tohoku_epco_n1.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Tohoku_epco_n1.jpg",
+    "file": "Tohoku epco n1.jpg",
+    "artist": "自分で撮影",
+    "license": "Copyrighted free use",
+    "license_url": "",
+    "via": "wikipedia",
+    "article_ja": "青森ねぶた"
+   }
   },
   {
    "id": 10,
@@ -322,7 +412,17 @@
    "months_basis_ja": "波の静かな日をのぞいて1年をとおして",
    "months_estimated": false,
    "description_ja": "リアス海岸の洞窟に波が押し寄せ、雷のような海鳴りが起こる。",
-   "description_en": "Waves surge into a sea cave on the ria coast and boom like thunder, giving the rock its name."
+   "description_en": "Waves surge into a sea cave on the ria coast and boom like thunder, giving the rock its name.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Ranb%C5%8D-ya%2C_Goishi-kaigan%2C_-12_Jun._2011_a.jpg/960px-Ranb%C5%8D-ya%2C_Goishi-kaigan%2C_-12_Jun._2011_a.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ranb%C5%8D-ya,_Goishi-kaigan,_-12_Jun._2011_a.jpg",
+    "file": "Ranbō-ya, Goishi-kaigan, -12 Jun. 2011 a.jpg",
+    "artist": "estel",
+    "license": "CC BY 2.1 jp",
+    "license_url": "https://creativecommons.org/licenses/by/2.1/jp/deed.en",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 11,
@@ -348,7 +448,17 @@
    "months_basis_ja": "6月1日から8月31日",
    "months_estimated": false,
    "description_ja": "夏の間、駅の構内に南部鉄器の風鈴が下げられ、澄んだ音色を響かせる。",
-   "description_en": "Each summer, Nanbu ironware wind chimes hang inside the station and ring clearly in the breeze."
+   "description_en": "Each summer, Nanbu ironware wind chimes hang inside the station and ring clearly in the breeze.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/JR_East_Mizusawa_Station_building%2C_Iwate_Pref.jpg/960px-JR_East_Mizusawa_Station_building%2C_Iwate_Pref.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Mizusawa_Station_building,_Iwate_Pref.jpg",
+    "file": "JR East Mizusawa Station building, Iwate Pref.jpg",
+    "artist": "Mister0124",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "水沢駅"
+   }
   },
   {
    "id": 12,
@@ -372,7 +482,17 @@
    "months_basis_ja": "毎年6月第2土曜日",
    "months_estimated": false,
    "description_ja": "6月、鈴で飾った100頭ほどの馬が神社から行進し、鈴の音が初夏を告げる。",
-   "description_en": "In June, about 100 horses decked with bells parade from the shrine, their jingling announcing early summer."
+   "description_en": "In June, about 100 horses decked with bells parade from the shrine, their jingling announcing early summer.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Chagu-chagu_Umakko_parade_in_front_of_Morioka_Station_2023a.jpg/960px-Chagu-chagu_Umakko_parade_in_front_of_Morioka_Station_2023a.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Chagu-chagu_Umakko_parade_in_front_of_Morioka_Station_2023a.jpg",
+    "file": "Chagu-chagu Umakko parade in front of Morioka Station 2023a.jpg",
+    "artist": "掬茶",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "チャグチャグ馬コ"
+   }
   },
   {
    "id": 13,
@@ -398,7 +518,17 @@
    "months_basis_ja": "立秋過ぎから晩秋の霜の降りる前まで → 「立秋過ぎから晩秋の霜の降りる前まで」を8〜10月と読み替えた（推定）",
    "months_estimated": true,
    "description_ja": "秋の夜、仙台東部の森や公園でスズムシが鳴き、古くから「宮城野の音」として親しまれてきた。",
-   "description_en": "On autumn nights, bell crickets sing in the woods and parks of eastern Sendai, long cherished as the sound of Miyagino."
+   "description_en": "On autumn nights, bell crickets sing in the woods and parks of eastern Sendai, long cherished as the sound of Miyagino.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Suzumushi.jpg/960px-Suzumushi.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Suzumushi.jpg",
+    "file": "Suzumushi.jpg",
+    "artist": "Monami at Japanese Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "via": "wikipedia",
+    "article_ja": "スズムシ"
+   }
   },
   {
    "id": 14,
@@ -425,7 +555,17 @@
    "months_basis_ja": "カジカガエル5月末から8月まで、野鳥は1年をとおして → カジカガエルの時期（5月末〜8月）を採用。野鳥は通年（推定）",
    "months_estimated": true,
    "description_ja": "街中を流れる広瀬川で、初夏から夏にカジカガエルが鳴き、カワセミなどの野鳥の声も聞こえる。",
-   "description_en": "In the Hirose River running through the city, kajika frogs sing from late spring to summer alongside kingfishers and other birds."
+   "description_en": "In the Hirose River running through the city, kajika frogs sing from late spring to summer alongside kingfishers and other birds.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Sendai_skyline_and_Hirose_River_from_Hyojogawara_Bridge.jpg/960px-Sendai_skyline_and_Hirose_River_from_Hyojogawara_Bridge.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sendai_skyline_and_Hirose_River_from_Hyojogawara_Bridge.jpg",
+    "file": "Sendai skyline and Hirose River from Hyojogawara Bridge.jpg",
+    "artist": "掬茶",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "広瀬川 (宮城県)"
+   }
   },
   {
    "id": 15,
@@ -454,7 +594,17 @@
    "months_basis_ja": "初夏から初冬にかけて → 「初夏から初冬にかけて」を6〜11月と読み替えた（推定）",
    "months_estimated": true,
    "description_ja": "広いヨシ原を風が渡り、葉のすれ合う音が一面に広がる。冬にはヨシ刈りが行われる。",
-   "description_en": "Wind sweeps across the vast reed beds and sets the leaves rustling; the reeds are cut by hand each winter."
+   "description_en": "Wind sweeps across the vast reed beds and sets the leaves rustling; the reeds are cut by hand each winter.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Kitakami_river01s3872.jpg/960px-Kitakami_river01s3872.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kitakami_river01s3872.jpg",
+    "file": "Kitakami river01s3872.jpg",
+    "artist": "663highland",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "via": "wikipedia",
+    "article_ja": "北上川"
+   }
   },
   {
    "id": 16,
@@ -482,7 +632,17 @@
    "months_basis_ja": "10月中旬から2月下旬",
    "months_estimated": false,
    "description_ja": "冬に飛来するマガンの群れが、日の出とともに一斉に飛び立つ羽音と鳴き声。",
-   "description_en": "Flocks of wintering white-fronted geese lift off together at sunrise in a roar of wings and calls."
+   "description_en": "Flocks of wintering white-fronted geese lift off together at sunrise in a roar of wings and calls.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Izunuma_01.jpg/960px-Izunuma_01.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Izunuma_01.jpg",
+    "file": "Izunuma 01.jpg",
+    "artist": "Σ64",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "via": "wikipedia",
+    "article_ja": "伊豆沼"
+   }
   },
   {
    "id": 17,
@@ -517,7 +677,17 @@
    "months_basis_ja": "1年をとおして（とくに早朝）",
    "months_estimated": false,
    "description_ja": "日本海沿いの大きな海岸林。松の梢を抜ける風が「松籟」となって響く。",
-   "description_en": "A large coastal pine forest by the Sea of Japan, where the wind through the needles makes a soft roar."
+   "description_en": "A large coastal pine forest by the Sea of Japan, where the wind through the needles makes a soft roar.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Kaze_no_Matsubara_in_morning_mist_20180721a.jpg/960px-Kaze_no_Matsubara_in_morning_mist_20180721a.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kaze_no_Matsubara_in_morning_mist_20180721a.jpg",
+    "file": "Kaze no Matsubara in morning mist 20180721a.jpg",
+    "artist": "掬茶",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "風の松原"
+   }
   },
   {
    "id": 18,
@@ -542,7 +712,17 @@
    "months_basis_ja": "7月下旬から8月中旬",
    "months_estimated": false,
    "description_ja": "芭蕉が「閑さや岩にしみ入る蝉の声」と詠んだ立石寺。夏に蝉の声が山を包む。",
-   "description_en": "At Risshaku-ji, where Basho wrote his famous haiku on cicadas, their song fills the mountain in summer."
+   "description_en": "At Risshaku-ji, where Basho wrote his famous haiku on cicadas, their song fills the mountain in summer.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Risshaku-ji_konponchudo.jpg/960px-Risshaku-ji_konponchudo.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Risshaku-ji_konponchudo.jpg",
+    "file": "Risshaku-ji konponchudo.jpg",
+    "artist": "Cp9asngf",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "立石寺"
+   }
   },
   {
    "id": 19,
@@ -566,7 +746,8 @@
    "months_basis_ja": "12月1日から31日まで",
    "months_estimated": false,
    "description_ja": "12月、山伏が法螺貝を吹きながら家々を回る、羽黒山の松例祭にちなむ行事。",
-   "description_en": "In December, mountain ascetics walk from house to house blowing conch shells, a custom tied to the Shoreisai festival of Mt. Haguro."
+   "description_en": "In December, mountain ascetics walk from house to house blowing conch shells, a custom tied to the Shoreisai festival of Mt. Haguro.",
+   "image": null
   },
   {
    "id": 20,
@@ -596,7 +777,17 @@
    "months_basis_ja": "10月上旬の第一陣飛来から北帰行の終わる4月上旬まで",
    "months_estimated": false,
    "description_ja": "10月に飛来した白鳥が、春の北帰行まで河口で鳴き交わす。",
-   "description_en": "Swans arrive in October and call to one another at the river mouth until they fly north in spring."
+   "description_en": "Swans arrive in October and call to one another at the river mouth until they fly north in spring.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Cygnus_bewickii_01_%28cropped%29.jpg/960px-Cygnus_bewickii_01_%28cropped%29.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Cygnus_bewickii_01_(cropped).jpg",
+    "file": "Cygnus bewickii 01 (cropped).jpg",
+    "artist": "Maga-chan",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "via": "wikipedia",
+    "article_ja": "コハクチョウ"
+   }
   },
   {
    "id": 21,
@@ -622,7 +813,8 @@
    "months_basis_ja": "4月から6月",
    "months_estimated": false,
    "description_ja": "四季を通じて野鳥が見られ、春から初夏はシジュウカラやクロツグミの声がにぎやか。",
-   "description_en": "Birds can be found all year, and spring to early summer is busy with tits and Japanese thrushes."
+   "description_en": "Birds can be found all year, and spring to early summer is busy with tits and Japanese thrushes.",
+   "image": null
   },
   {
    "id": 22,
@@ -657,7 +849,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "旧街道の宿場の両脇を流れる用水の音。江戸時代から暮らしを支えてきた。",
-   "description_en": "Water running in channels along both sides of an old post town, supporting daily life since the Edo period."
+   "description_en": "Water running in channels along both sides of an old post town, supporting daily life since the Edo period.",
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Ja-fukushima-ohuchijuku-4.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ja-fukushima-ohuchijuku-4.jpg",
+    "file": "Ja-fukushima-ohuchijuku-4.jpg",
+    "artist": "ja:User:Fluffy nns. Uploaded by 百楽兎",
+    "license": "Public domain",
+    "license_url": "",
+    "via": "wikipedia",
+    "article_ja": "大内宿"
+   }
   },
   {
    "id": 23,
@@ -692,7 +894,17 @@
    "months_basis_ja": "1年をとおして（とくに冬期）",
    "months_estimated": false,
    "description_ja": "からむし(苧麻)の布を織る機の音が、山あいの集落に静かに響く。",
-   "description_en": "The clack of looms weaving ramie cloth sounds quietly through a mountain village with 600 years of this craft."
+   "description_en": "The clack of looms weaving ramie cloth sounds quietly through a mountain village with 600 years of this craft.",
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Boehmeria_nivea_1.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Boehmeria_nivea_1.jpg",
+    "file": "Boehmeria nivea 1.jpg",
+    "artist": "Sphl",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "via": "wikipedia",
+    "article_ja": "カラムシ"
+   }
   },
   {
    "id": 24,
@@ -727,7 +939,17 @@
    "months_basis_ja": "1年をとおして（とくに冬）",
    "months_estimated": false,
    "description_ja": "入り組んだ断崖と岩礁に太平洋の波が砕ける。岡倉天心の六角堂が立つ海岸。",
-   "description_en": "Pacific waves break against cliffs and reefs on the coast where Okakura Tenshin built his hexagonal pavilion."
+   "description_en": "Pacific waves break against cliffs and reefs on the coast where Okakura Tenshin built his hexagonal pavilion.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Rokkakudo_seen_from_the_sea_%28Kitaibaraki_City%29_2020.jpg/960px-Rokkakudo_seen_from_the_sea_%28Kitaibaraki_City%29_2020.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Rokkakudo_seen_from_the_sea_(Kitaibaraki_City)_2020.jpg",
+    "file": "Rokkakudo seen from the sea (Kitaibaraki City) 2020.jpg",
+    "artist": "小石川人晃",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 25,
@@ -752,7 +974,17 @@
    "months_basis_ja": "6月下旬から7月上旬の雨どき",
    "months_estimated": false,
    "description_ja": "梅雨どき、あじさいの咲く約1000段の石段で雨蛙が鳴く。",
-   "description_en": "During the rainy season, tree frogs sing along a 1,000-step stone path lined with hydrangeas."
+   "description_en": "During the rainy season, tree frogs sing along a 1,000-step stone path lined with hydrangeas.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Fuji_Sengen_Shrine_on_the_summit_of_Mt._Ohira.jpg/960px-Fuji_Sengen_Shrine_on_the_summit_of_Mt._Ohira.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Fuji_Sengen_Shrine_on_the_summit_of_Mt._Ohira.jpg",
+    "file": "Fuji Sengen Shrine on the summit of Mt. Ohira.jpg",
+    "artist": "Miyuki Meinaka",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "太平山 (栃木県)"
+   }
   },
   {
    "id": 26,
@@ -787,7 +1019,17 @@
    "months_basis_ja": "毎日9時から17時",
    "months_estimated": false,
    "description_ja": "地中の甕に水滴が落ち、琴のような音が響く日本庭園の水琴窟。",
-   "description_en": "Water drips into a buried jar in a Japanese garden and echoes like a koto."
+   "description_en": "Water drips into a buried jar in a Japanese garden and echoes like a koto.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Shinsh%C5%8D_Gokuraku-ji_001.jpg/960px-Shinsh%C5%8D_Gokuraku-ji_001.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Shinsh%C5%8D_Gokuraku-ji_001.jpg",
+    "file": "Shinshō Gokuraku-ji 001.jpg",
+    "artist": "Flickr user rhosoi(Ryosuke Hosoi)",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "via": "wikipedia",
+    "article_ja": "水琴窟"
+   }
   },
   {
    "id": 27,
@@ -822,7 +1064,17 @@
    "months_basis_ja": "毎日4回（6,12,15,18時）",
    "months_estimated": false,
    "description_ja": "蔵造りの町並みにそびえる鐘楼から、1日4回時を告げる鐘が鳴る。",
-   "description_en": "A wooden bell tower rising above the old warehouse-style streets rings the time four times a day."
+   "description_en": "A wooden bell tower rising above the old warehouse-style streets rings the time four times a day.",
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/KawagoeTowerCommons.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:KawagoeTowerCommons.jpg",
+    "file": "KawagoeTowerCommons.jpg",
+    "artist": "user:Fg2",
+    "license": "Public domain",
+    "license_url": "",
+    "via": "wikipedia",
+    "article_ja": "時の鐘 (川越市)"
+   }
   },
   {
    "id": 28,
@@ -848,7 +1100,17 @@
    "months_basis_ja": "8月下旬から10月上旬の18時ごろから",
    "months_estimated": false,
    "description_ja": "晩夏から秋の夕暮れ、河原の草地でマツムシやスズムシなどが一斉に鳴き出す。",
-   "description_en": "At dusk from late summer into autumn, crickets and katydids start singing together in the riverside grassland."
+   "description_en": "At dusk from late summer into autumn, crickets and katydids start singing together in the riverside grassland.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Xenogryllus_marmoratus_from_iNaturalist_photo_320079756.jpg/960px-Xenogryllus_marmoratus_from_iNaturalist_photo_320079756.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Xenogryllus_marmoratus_from_iNaturalist_photo_320079756.jpg",
+    "file": "Xenogryllus marmoratus from iNaturalist photo 320079756.jpg",
+    "artist": "renshuchu",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "via": "wikipedia",
+    "article_ja": "マツムシ"
+   }
   },
   {
    "id": 29,
@@ -883,7 +1145,17 @@
    "months_basis_ja": "毎日9時から16時まで30分間隔",
    "months_estimated": false,
    "description_ja": "用水を渡す樋の橋から30分ごとに水が落ち、「じゃあじゃあ橋」と呼ばれる。",
-   "description_en": "Water spills from an aqueduct bridge every 30 minutes; locals call it the \"jaa-jaa bridge\" after the sound."
+   "description_en": "Water spills from an aqueduct bridge every 30 minutes; locals call it the \"jaa-jaa bridge\" after the sound.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Inou-tadataka-house%2Ckatori-city%2Cjapan.JPG/960px-Inou-tadataka-house%2Ckatori-city%2Cjapan.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Inou-tadataka-house,katori-city,japan.JPG",
+    "file": "Inou-tadataka-house,katori-city,japan.JPG",
+    "artist": "katorisi",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "via": "wikipedia",
+    "article_ja": "伊能忠敬旧宅"
+   }
   },
   {
    "id": 30,
@@ -908,7 +1180,17 @@
    "months_basis_ja": "7月中旬から8月上旬",
    "months_estimated": false,
    "description_ja": "夏、高原でヒメハルゼミが数匹鳴き出すと一斉に合唱となり、急に止む。",
-   "description_en": "In summer, once a few cicadas begin, the whole hillside joins in chorus, then suddenly falls silent."
+   "description_en": "In summer, once a few cicadas begin, the whole hillside joins in chorus, then suddenly falls silent.",
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Himeharuzemi0807-1.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Himeharuzemi0807-1.jpg",
+    "file": "Himeharuzemi0807-1.jpg",
+    "artist": "ふうけ",
+    "license": "Public domain",
+    "license_url": "",
+    "via": "wikipedia",
+    "article_ja": "ヒメハルゼミ"
+   }
   },
   {
    "id": 31,
@@ -943,7 +1225,17 @@
    "months_basis_ja": "1年をとおして。渡し舟は3月中旬から11月末は毎日",
    "months_estimated": false,
    "description_ja": "参道のにぎわいと、江戸川を渡る手漕ぎの渡し舟の音。",
-   "description_en": "The bustle of a temple approach and the creak of a hand-rowed ferry crossing the Edo River."
+   "description_en": "The bustle of a temple approach and the creak of a hand-rowed ferry crossing the Edo River.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Shibamata_Taishakuten_March_11_2021_various_20_44_16_882000.jpeg/960px-Shibamata_Taishakuten_March_11_2021_various_20_44_16_882000.jpeg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Shibamata_Taishakuten_March_11_2021_various_20_44_16_882000.jpeg",
+    "file": "Shibamata Taishakuten March 11 2021 various 20 44 16 882000.jpeg",
+    "artist": "Nesnad",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "via": "wikipedia",
+    "article_ja": "柴又帝釈天"
+   }
   },
   {
    "id": 32,
@@ -978,7 +1270,17 @@
    "months_basis_ja": "毎日、朝夕6時と正午",
    "months_estimated": false,
    "description_ja": "「花の雲 鐘は上野か浅草か」と詠まれた鐘。今も朝夕6時と正午に鳴る。",
-   "description_en": "The bell from the haiku \"a cloud of blossoms, is that bell Ueno or Asakusa?\" still rings at 6 am, noon and 6 pm."
+   "description_en": "The bell from the haiku \"a cloud of blossoms, is that bell Ueno or Asakusa?\" still rings at 6 am, noon and 6 pm.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/%E6%99%82%E3%81%AE%E9%90%98_%28%E5%8F%B0%E6%9D%B1%E5%8C%BA%E4%B8%8A%E9%87%8E%E5%85%AC%E5%9C%92%29.jpg/960px-%E6%99%82%E3%81%AE%E9%90%98_%28%E5%8F%B0%E6%9D%B1%E5%8C%BA%E4%B8%8A%E9%87%8E%E5%85%AC%E5%9C%92%29.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%E6%99%82%E3%81%AE%E9%90%98_(%E5%8F%B0%E6%9D%B1%E5%8C%BA%E4%B8%8A%E9%87%8E%E5%85%AC%E5%9C%92).jpg",
+    "file": "時の鐘 (台東区上野公園).jpg",
+    "artist": "Syced",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 33,
@@ -1013,7 +1315,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "住宅地の中の公園で、水鳥の羽音、水辺の音、木々のざわめきが聞こえる。",
-   "description_en": "In a park surrounded by houses, water birds, lapping water and rustling trees can be heard."
+   "description_en": "In a park surrounded by houses, water birds, lapping water and rustling trees can be heard.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/%E4%B8%89%E5%AE%9D%E5%AF%BA%E6%B1%A0%E3%81%A8%E5%8E%B3%E5%B3%B6%E7%A5%9E%E7%A4%BE%EF%BC%882021%E5%B9%B45%E6%9C%88%EF%BC%89.jpg/960px-%E4%B8%89%E5%AE%9D%E5%AF%BA%E6%B1%A0%E3%81%A8%E5%8E%B3%E5%B3%B6%E7%A5%9E%E7%A4%BE%EF%BC%882021%E5%B9%B45%E6%9C%88%EF%BC%89.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E5%AE%9D%E5%AF%BA%E6%B1%A0%E3%81%A8%E5%8E%B3%E5%B3%B6%E7%A5%9E%E7%A4%BE%EF%BC%882021%E5%B9%B45%E6%9C%88%EF%BC%89.jpg",
+    "file": "三宝寺池と厳島神社（2021年5月）.jpg",
+    "artist": "Guy-aan",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "石神井公園"
+   }
   },
   {
    "id": 34,
@@ -1048,7 +1360,17 @@
    "months_basis_ja": "1年をとおして。とくに早朝",
    "months_estimated": false,
    "description_ja": "新緑の葉ずれ、夏の木陰、秋の落ち葉、冬の枝を鳴らす風。四季の音が変わる並木道。",
-   "description_en": "Fresh leaves in spring, shade in summer, fallen leaves in autumn and wind in bare branches in winter."
+   "description_en": "Fresh leaves in spring, shade in summer, fallen leaves in autumn and wind in bare branches in winter.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/2025_Seikei_Gakuen_Main_Building.jpg/960px-2025_Seikei_Gakuen_Main_Building.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:2025_Seikei_Gakuen_Main_Building.jpg",
+    "file": "2025 Seikei Gakuen Main Building.jpg",
+    "artist": "Kakidai",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "成蹊大学"
+   }
   },
   {
    "id": 35,
@@ -1072,7 +1394,17 @@
    "months_basis_ja": "1月1日の午前0時",
    "months_estimated": false,
    "description_ja": "元日の午前0時、港の船が一斉に汽笛を鳴らして新年を迎える。",
-   "description_en": "At midnight on New Year's Day, ships in the harbor sound their horns all at once."
+   "description_en": "At midnight on New Year's Day, ships in the harbor sound their horns all at once.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Airborne_imagery_Yokohama_City_%284274354758%29.jpg/960px-Airborne_imagery_Yokohama_City_%284274354758%29.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Airborne_imagery_Yokohama_City_(4274354758).jpg",
+    "file": "Airborne imagery Yokohama City (4274354758).jpg",
+    "artist": "Kentaro Iemoto from Tokyo, Japan",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "via": "wikipedia",
+    "article_ja": "横浜港"
+   }
   },
   {
    "id": 36,
@@ -1097,7 +1429,17 @@
    "months_basis_ja": "1月から2月",
    "months_estimated": false,
    "description_ja": "参拝客でにぎわう参道に、飴を切る包丁の「トントコ」という音が響く。",
-   "description_en": "On the busy temple approach, candy makers chop sweets with a rhythmic \"tontoko\" beat."
+   "description_en": "On the busy temple approach, candy makers chop sweets with a rhythmic \"tontoko\" beat.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Kawasaki_Daishi_-_2024_Oct_1_various_19_07_54_558000.jpeg/960px-Kawasaki_Daishi_-_2024_Oct_1_various_19_07_54_558000.jpeg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kawasaki_Daishi_-_2024_Oct_1_various_19_07_54_558000.jpeg",
+    "file": "Kawasaki Daishi - 2024 Oct 1 various 19 07 54 558000.jpeg",
+    "artist": "Nesnad",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "via": "wikipedia",
+    "article_ja": "平間寺"
+   }
   },
   {
    "id": 37,
@@ -1132,7 +1474,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "湧水の沢のせせらぎと、メジロやシジュウカラのさえずりが聞ける公園。",
-   "description_en": "A park where spring-fed brooks murmur and white-eyes and tits sing."
+   "description_en": "A park where spring-fed brooks murmur and white-eyes and tits sing.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/%E9%81%93%E4%BF%9D%E5%B7%9D%E5%85%AC%E5%9C%92_3.jpg/960px-%E9%81%93%E4%BF%9D%E5%B7%9D%E5%85%AC%E5%9C%92_3.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%E9%81%93%E4%BF%9D%E5%B7%9D%E5%85%AC%E5%9C%92_3.jpg",
+    "file": "道保川公園 3.jpg",
+    "artist": "筆者",
+    "license": "Public domain",
+    "license_url": "",
+    "via": "wikipedia",
+    "article_ja": "道保川公園"
+   }
   },
   {
    "id": 38,
@@ -1161,7 +1513,17 @@
    "months_basis_ja": "10月から翌年の3月",
    "months_estimated": false,
    "description_ja": "オオヒシクイの日本最大の越冬地。力強い鳴き声が冬空に響く。",
-   "description_en": "The largest wintering site in Japan for tundra bean geese, whose strong calls echo across the winter sky."
+   "description_en": "The largest wintering site in Japan for tundra bean geese, whose strong calls echo across the winter sky.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/NiigataCityOpenData_fukushimagata001.jpg/960px-NiigataCityOpenData_fukushimagata001.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:NiigataCityOpenData_fukushimagata001.jpg",
+    "file": "NiigataCityOpenData fukushimagata001.jpg",
+    "artist": "新潟市（Niigata City）",
+    "license": "CC BY 2.1 jp",
+    "license_url": "https://creativecommons.org/licenses/by/2.1/jp/deed.en",
+    "via": "wikipedia",
+    "article_ja": "福島潟"
+   }
   },
   {
    "id": 39,
@@ -1186,7 +1548,17 @@
    "months_basis_ja": "7月中旬から8月上旬、早朝から日没後まで",
    "months_estimated": false,
    "description_ja": "7月ごろ、神社の社叢でヒメハルゼミが一斉に鳴き、止む。「音頭取」と呼ばれる雄の声が合図。",
-   "description_en": "Around July, cicadas in the shrine forest start and stop in unison, led by a male known as the \"ondotori\"."
+   "description_en": "Around July, cicadas in the shrine forest start and stop in unison, led by a male known as the \"ondotori\".",
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Himeharuzemi0807-1.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Himeharuzemi0807-1.jpg",
+    "file": "Himeharuzemi0807-1.jpg",
+    "artist": "ふうけ",
+    "license": "Public domain",
+    "license_url": "",
+    "via": "wikipedia",
+    "article_ja": "ヒメハルゼミ"
+   }
   },
   {
    "id": 40,
@@ -1211,7 +1583,17 @@
    "months_basis_ja": "4月から5月ごろ",
    "months_estimated": false,
    "description_ja": "富士山麓の森で、春から初夏にヤマガラやホトトギスなどの声が聞ける。",
-   "description_en": "In the forest at the foot of Mt. Fuji, varied tits, cuckoos and other birds sing from spring into early summer."
+   "description_en": "In the forest at the foot of Mt. Fuji, varied tits, cuckoos and other birds sing from spring into early summer.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/%E8%A5%BF%E6%B9%96%E9%87%8E%E9%B3%A5%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92%E3%81%8B%E3%82%89%E5%AF%8C%E5%A3%AB%E5%B1%B1%E3%82%92%E7%9C%BA%E3%82%81%E3%82%8B_-_panoramio.jpg/960px-%E8%A5%BF%E6%B9%96%E9%87%8E%E9%B3%A5%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92%E3%81%8B%E3%82%89%E5%AF%8C%E5%A3%AB%E5%B1%B1%E3%82%92%E7%9C%BA%E3%82%81%E3%82%8B_-_panoramio.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%E8%A5%BF%E6%B9%96%E9%87%8E%E9%B3%A5%E3%81%AE%E6%A3%AE%E5%85%AC%E5%9C%92%E3%81%8B%E3%82%89%E5%AF%8C%E5%A3%AB%E5%B1%B1%E3%82%92%E7%9C%BA%E3%82%81%E3%82%8B_-_panoramio.jpg",
+    "file": "西湖野鳥の森公園から富士山を眺める - panoramio.jpg",
+    "artist": "funk bass",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 41,
@@ -1246,7 +1628,17 @@
    "months_basis_ja": "毎日10時から16時までの毎正時",
    "months_estimated": false,
    "description_ja": "毎日、時を告げて鳴る善光寺の鐘。1998年冬季五輪の開会も告げた。",
-   "description_en": "The temple bell strikes the hours daily; it also opened the 1998 Winter Olympics."
+   "description_en": "The temple bell strikes the hours daily; it also opened the 1998 Winter Olympics.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Zenkoji_Temple_Hondo.jpg/960px-Zenkoji_Temple_Hondo.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Zenkoji_Temple_Hondo.jpg",
+    "file": "Zenkoji Temple Hondo.jpg",
+    "artist": "快速踊り子",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "善光寺"
+   }
   },
   {
    "id": 42,
@@ -1281,7 +1673,17 @@
    "months_basis_ja": "1年をとおして。とくに初夏",
    "months_estimated": false,
    "description_ja": "「野鳥の塩嶺」と呼ばれる森で、初夏はカッコウやキビタキなどがさえずる。",
-   "description_en": "Known as a forest of wild birds; in early summer cuckoos and narcissus flycatchers sing."
+   "description_en": "Known as a forest of wild birds; in early summer cuckoos and narcissus flycatchers sing.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Enrei_Onodachi_Park_2.jpg/960px-Enrei_Onodachi_Park_2.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Enrei_Onodachi_Park_2.jpg",
+    "file": "Enrei Onodachi Park 2.jpg",
+    "artist": "photo: Qurren (talk) Taken with Canon IXY 430F (Digital IXUS 245 HS)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "塩嶺御野立記念祭"
+   }
   },
   {
    "id": 43,
@@ -1306,7 +1708,17 @@
    "months_basis_ja": "6月から7月",
    "months_estimated": false,
    "description_ja": "高層湿原の池で、6月から7月にシュレーゲルアオガエルなどが鳴く。",
-   "description_en": "In the ponds of a high moor, Schlegel's green tree frogs and others call in June and July."
+   "description_en": "In the ponds of a high moor, Schlegel's green tree frogs and others call in June and July.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Yashima04.JPG/960px-Yashima04.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Yashima04.JPG",
+    "file": "Yashima04.JPG",
+    "artist": "Mass Ave 975",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "八島ヶ原湿原"
+   }
   },
   {
    "id": 44,
@@ -1337,7 +1749,17 @@
    "months_basis_ja": "4月下旬から11月末日",
    "months_estimated": false,
    "description_ja": "落差350mの滝が一気に流れ落ち、断崖に響く。",
-   "description_en": "Water drops 350 m in one fall and thunders against the cliff walls."
+   "description_en": "Water drops 350 m in one fall and thunders against the cliff walls.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Shomyo_Falls%2C_zenkei.jpg/960px-Shomyo_Falls%2C_zenkei.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Shomyo_Falls,_zenkei.jpg",
+    "file": "Shomyo Falls, zenkei.jpg",
+    "artist": "Saigen Jiro",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "via": "wikipedia",
+    "article_ja": "称名滝"
+   }
   },
   {
    "id": 45,
@@ -1372,7 +1794,17 @@
    "months_basis_ja": "水音は1年をとおして。風の盆は9月1日〜3日",
    "months_estimated": false,
    "description_ja": "坂の町を流れる用水「エンナカ」の水音。9月の風の盆の間だけはおわら節にかき消される。",
-   "description_en": "Water runs through channels in a hillside town, drowned out only during the Owara dance festival in September."
+   "description_en": "Water runs through channels in a hillside town, drowned out only during the Owara dance festival in September.",
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Kazenobon01.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kazenobon01.jpg",
+    "file": "Kazenobon01.jpg",
+    "artist": "Jinzuu",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "おわら風の盆"
+   }
   },
   {
    "id": 46,
@@ -1407,7 +1839,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "木彫りの町で、木槌とノミの音が通りに響き、瑞泉寺の鐘と重なる。",
-   "description_en": "In this woodcarving town, mallets and chisels tap along the street, mixed with the bell of Zuisen-ji."
+   "description_en": "In this woodcarving town, mallets and chisels tap along the street, mixed with the bell of Zuisen-ji.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/InamibetsuinZuisenji.JPG/960px-InamibetsuinZuisenji.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:InamibetsuinZuisenji.JPG",
+    "file": "InamibetsuinZuisenji.JPG",
+    "artist": "Resto1578",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "真宗大谷派井波別院瑞泉寺"
+   }
   },
   {
    "id": 47,
@@ -1432,7 +1874,17 @@
    "months_basis_ja": "7月上旬から8月までの朝と夕方",
    "months_estimated": false,
    "description_ja": "市街地に残る森で、夏の朝と夕方にヒグラシなどの声が降り注ぐ。",
-   "description_en": "In a forest left in the city center, evening cicadas pour down their song on summer mornings and evenings."
+   "description_en": "In a forest left in the city center, evening cicadas pour down their song on summer mornings and evenings.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Hondanomori.jpg/960px-Hondanomori.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Hondanomori.jpg",
+    "file": "Hondanomori.jpg",
+    "artist": "Hirorinmasa",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "本多の森公園"
+   }
   },
   {
    "id": 48,
@@ -1467,7 +1919,17 @@
    "months_basis_ja": "毎日17時、毎週土曜日の18時",
    "months_estimated": false,
    "description_ja": "寺の集まる町で、毎週土曜の夕方に6つの寺の鐘が一斉に鳴る。",
-   "description_en": "In the temple district, the bells of six temples ring together every Saturday evening."
+   "description_en": "In the temple district, the bells of six temples ring together every Saturday evening.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Kanazawa_Nodamichi_20160618.jpg/960px-Kanazawa_Nodamichi_20160618.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kanazawa_Nodamichi_20160618.jpg",
+    "file": "Kanazawa Nodamichi 20160618.jpg",
+    "artist": "Kyoww",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "寺町寺院群"
+   }
   },
   {
    "id": 49,
@@ -1502,7 +1964,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "ほぼ60分おきに水が湧き出して滝に落ちる冷泉。昔は時計代わりにされた。",
-   "description_en": "A spring that gushes about every 60 minutes into a small fall; people once used it to tell the time."
+   "description_en": "A spring that gushes about every 60 minutes into a small fall; people once used it to tell the time.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/%E6%99%82%E6%B0%B4.jpg/960px-%E6%99%82%E6%B0%B4.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%E6%99%82%E6%B0%B4.jpg",
+    "file": "時水.jpg",
+    "artist": "英恵芙",
+    "license": "Public domain",
+    "license_url": "",
+    "via": "wikipedia",
+    "article_ja": "時水"
+   }
   },
   {
    "id": 50,
@@ -1537,7 +2009,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "卯建の上がる町並みの旧家の庭で、水琴窟が琴のような音を立てる。",
-   "description_en": "In the garden of an old merchant house, a suikinkutsu rings like a koto."
+   "description_en": "In the garden of an old merchant house, a suikinkutsu rings like a koto.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/%E3%81%86%E3%81%A0%E3%81%A4%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E7%94%BA%E4%B8%A6%E3%81%BF_%28%E5%B2%90%E9%98%9C%E7%9C%8C%E7%BE%8E%E6%BF%83%E5%B8%82%29-%E7%94%BA%E4%B8%A6%E3%81%BFmino_udatsu023.jpg/960px-%E3%81%86%E3%81%A0%E3%81%A4%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E7%94%BA%E4%B8%A6%E3%81%BF_%28%E5%B2%90%E9%98%9C%E7%9C%8C%E7%BE%8E%E6%BF%83%E5%B8%82%29-%E7%94%BA%E4%B8%A6%E3%81%BFmino_udatsu023.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%E3%81%86%E3%81%A0%E3%81%A4%E3%81%AE%E4%B8%8A%E3%81%8C%E3%82%8B%E7%94%BA%E4%B8%A6%E3%81%BF_(%E5%B2%90%E9%98%9C%E7%9C%8C%E7%BE%8E%E6%BF%83%E5%B8%82)-%E7%94%BA%E4%B8%A6%E3%81%BFmino_udatsu023.jpg",
+    "file": "うだつの上がる町並み (岐阜県美濃市)-町並みmino udatsu023.jpg",
+    "artist": "杉山宣嗣",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 51,
@@ -1562,7 +2044,17 @@
    "months_basis_ja": "7月から8月",
    "months_estimated": false,
    "description_ja": "夏、子どもたちが橋から清流に飛び込む歓声と水音。",
-   "description_en": "In summer, children leap from bridges into the clear river amid shouts and splashes."
+   "description_en": "In summer, children leap from bridges into the clear river amid shouts and splashes.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Gujo-Hachiman_Yoshida_River_2019-08_ac.jpg/960px-Gujo-Hachiman_Yoshida_River_2019-08_ac.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Gujo-Hachiman_Yoshida_River_2019-08_ac.jpg",
+    "file": "Gujo-Hachiman Yoshida River 2019-08 ac.jpg",
+    "artist": "Asturio Cantabrio",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 52,
@@ -1591,7 +2083,17 @@
    "months_basis_ja": "毎年5月11日から10月15日",
    "months_estimated": false,
    "description_ja": "夜の川に、鵜を励ます「ホウホウ」の掛け声と舟べりを叩く音が響く。",
-   "description_en": "On summer nights, fishermen call \"hoh hoh\" to their cormorants and drum on the boat sides."
+   "description_en": "On summer nights, fishermen call \"hoh hoh\" to their cormorants and drum on the boat sides.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Cormorant_fishing_on_the_Nagara_River_-_Jul_7%2C_2025.jpg/960px-Cormorant_fishing_on_the_Nagara_River_-_Jul_7%2C_2025.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Cormorant_fishing_on_the_Nagara_River_-_Jul_7,_2025.jpg",
+    "file": "Cormorant fishing on the Nagara River - Jul 7, 2025.jpg",
+    "artist": "Ludger Heide",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "長良川鵜飼"
+   }
   },
   {
    "id": 53,
@@ -1626,7 +2128,17 @@
    "months_basis_ja": "1年をとおして。とくに天候の変わり目",
    "months_estimated": false,
    "description_ja": "遠州灘一帯で天気の変わり目に聞こえる海鳴り。東から聞こえれば天気がくずれると言い伝えられる。",
-   "description_en": "A sea roar heard along the coast when the weather changes; locals say rain comes when it sounds from the east."
+   "description_en": "A sea roar heard along the coast when the weather changes; locals say rain comes when it sounds from the east.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Nakatajima_Sand_Dunes_1.jpg/960px-Nakatajima_Sand_Dunes_1.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Nakatajima_Sand_Dunes_1.jpg",
+    "file": "Nakatajima Sand Dunes 1.jpg",
+    "artist": "Brücke-Osteuropa",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 54,
@@ -1661,7 +2173,17 @@
    "months_basis_ja": "SLが発車するとき。とくに春から初夏 → 「SLが発車するとき」とあり、運行日があるため通年とした（推定）",
    "months_estimated": true,
    "description_ja": "南アルプスの麓の谷に、SLの汽笛と野鳥のさえずりが重なる。",
-   "description_en": "The whistle of steam locomotives mixes with birdsong in the valley at the foot of the Southern Alps."
+   "description_en": "The whistle of steam locomotives mixes with birdsong in the valley at the foot of the Southern Alps.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Oigawa_Railway_49616_steam_locomotive_2011-08-12.jpg/960px-Oigawa_Railway_49616_steam_locomotive_2011-08-12.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Oigawa_Railway_49616_steam_locomotive_2011-08-12.jpg",
+    "file": "Oigawa Railway 49616 steam locomotive 2011-08-12.jpg",
+    "artist": "akiraasakura367",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 55,
@@ -1696,7 +2218,17 @@
    "months_basis_ja": "1年をとおして。とくに春や秋の渡りの季節",
    "months_estimated": false,
    "description_ja": "丘陵の植物園の森で、シジュウカラやメジロなどの声が聞ける。春と秋の渡りの頃は種類が増える。",
-   "description_en": "Tits and white-eyes sing in the hillside garden forest, with more species during spring and autumn migration."
+   "description_en": "Tits and white-eyes sing in the hillside garden forest, with more species during spring and autumn migration.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Higashiyama_Zoo_%26_Botanical_Gardens_Main_Gate_%282%29%2C_Kameiri_Tashiro-cho_Chikusa_Ward_Nagoya_2021.jpg/960px-Higashiyama_Zoo_%26_Botanical_Gardens_Main_Gate_%282%29%2C_Kameiri_Tashiro-cho_Chikusa_Ward_Nagoya_2021.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Higashiyama_Zoo_%26_Botanical_Gardens_Main_Gate_(2),_Kameiri_Tashiro-cho_Chikusa_Ward_Nagoya_2021.jpg",
+    "file": "Higashiyama Zoo & Botanical Gardens Main Gate (2), Kameiri Tashiro-cho Chikusa Ward Nagoya 2021.jpg",
+    "artist": "Tomio344456",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "東山動植物園"
+   }
   },
   {
    "id": 56,
@@ -1731,7 +2263,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "春から夏は力強く、秋から冬は穏やかな潮騒が聞こえる砂浜。",
-   "description_en": "A sandy beach where the surf is powerful in spring and summer and gentle in autumn and winter."
+   "description_en": "A sandy beach where the surf is powerful in spring and summer and gentle in autumn and winter.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Iragomisaki5.jpg/960px-Iragomisaki5.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Iragomisaki5.jpg",
+    "file": "Iragomisaki5.jpg",
+    "artist": "Bariston",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "恋路ヶ浜 (田原市)"
+   }
   },
   {
    "id": 57,
@@ -1760,7 +2302,17 @@
    "months_basis_ja": "志摩町:4月1日から9月14日、鳥羽市:7月11日のしろんご祭り",
    "months_estimated": false,
    "description_ja": "海女が潜水から浮かび上がるときに吐く息が、口笛のような音になる。",
-   "description_en": "When ama divers surface, they release their breath in a whistle-like sound called isobue."
+   "description_en": "When ama divers surface, they release their breath in a whistle-like sound called isobue.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Ama_Diver%27s_Show%2C_Shima_Marineland.jpg/960px-Ama_Diver%27s_Show%2C_Shima_Marineland.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ama_Diver%27s_Show,_Shima_Marineland.jpg",
+    "file": "Ama Diver's Show, Shima Marineland.jpg",
+    "artist": "Miyuki Meinaka",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 58,
@@ -1795,7 +2347,17 @@
    "months_basis_ja": "毎日17時ごろ。大晦日には除夜の鐘",
    "months_estimated": false,
    "description_ja": "近江八景の一つ。毎夕5時ごろ、三井寺の鐘が町に時を告げる。",
-   "description_en": "One of the Eight Views of Omi; the temple bell rings out over the town each evening around five."
+   "description_en": "One of the Eight Views of Omi; the temple bell rings out over the town each evening around five.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Mii-dera_Otsu_Shiga_pref01s5s4592.jpg/960px-Mii-dera_Otsu_Shiga_pref01s5s4592.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Mii-dera_Otsu_Shiga_pref01s5s4592.jpg",
+    "file": "Mii-dera Otsu Shiga pref01s5s4592.jpg",
+    "artist": "663highland",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "via": "wikipedia",
+    "article_ja": "園城寺"
+   }
   },
   {
    "id": 59,
@@ -1830,7 +2392,17 @@
    "months_basis_ja": "時報鐘は毎日6時から18時まで3時間ごと。ヒグラシ7月下旬〜8月下旬、スズムシ等9〜10月",
    "months_estimated": false,
    "description_ja": "城内の時報鐘が3時間ごとに鳴り、夏はヒグラシ、秋はスズムシなどの虫の声が加わる。",
-   "description_en": "The castle time bell rings every three hours, joined by evening cicadas in summer and crickets in autumn."
+   "description_en": "The castle time bell rings every three hours, joined by evening cicadas in summer and crickets in autumn.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Hikone_Castle_November_2016_-02.jpg/960px-Hikone_Castle_November_2016_-02.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Hikone_Castle_November_2016_-02.jpg",
+    "file": "Hikone Castle November 2016 -02.jpg",
+    "artist": "Martin Falbisoner",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "彦根城"
+   }
   },
   {
    "id": 60,
@@ -1865,7 +2437,17 @@
    "months_basis_ja": "1年をとおして。とくに5月から6月",
    "months_estimated": false,
    "description_ja": "嵯峨野などの竹林で、風に揺れる竹がさざ波のような音を立てる。",
-   "description_en": "In Sagano and other groves, bamboo sways in the wind with a sound like rippling waves."
+   "description_en": "In Sagano and other groves, bamboo sways in the wind with a sound like rippling waves.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/2021_Sagano_Bamboo_forest_in_Arashiyama%2C_Kyoto%2C_Japan.jpg/960px-2021_Sagano_Bamboo_forest_in_Arashiyama%2C_Kyoto%2C_Japan.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:2021_Sagano_Bamboo_forest_in_Arashiyama,_Kyoto,_Japan.jpg",
+    "file": "2021 Sagano Bamboo forest in Arashiyama, Kyoto, Japan.jpg",
+    "artist": "Naokijp",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "嵯峨野"
+   }
   },
   {
    "id": 61,
@@ -1900,7 +2482,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "高原の渓谷に連なる滝や淵が、四季の景色とともに水音を響かせる。",
-   "description_en": "A highland gorge where a chain of falls and pools sounds through every season."
+   "description_en": "A highland gorge where a chain of falls and pools sounds through every season.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Meibaku%2C_Rurikei02.JPG/960px-Meibaku%2C_Rurikei02.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Meibaku,_Rurikei02.JPG",
+    "file": "Meibaku, Rurikei02.JPG",
+    "artist": "Kansai explorer",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "via": "wikipedia",
+    "article_ja": "るり渓"
+   }
   },
   {
    "id": 62,
@@ -1935,7 +2527,17 @@
    "months_basis_ja": "1年をとおして（砂が湿っていなければ）。とくに春先",
    "months_estimated": false,
    "description_ja": "乾いた砂の上を歩くと「キュッキュッ」と鳴る鳴き砂の浜。",
-   "description_en": "A beach of singing sand that squeaks underfoot when dry."
+   "description_en": "A beach of singing sand that squeaks underfoot when dry.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Kotohiki_beach.jpg/960px-Kotohiki_beach.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kotohiki_beach.jpg",
+    "file": "Kotohiki beach.jpg",
+    "artist": "sdkfz183",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "via": "wikipedia",
+    "article_ja": "琴引浜"
+   }
   },
   {
    "id": 63,
@@ -1960,7 +2562,17 @@
    "months_basis_ja": "秋の日没前後から深夜にかけて → 「秋の日没前後から深夜」を9〜10月と読み替えた（推定）",
    "months_estimated": true,
    "description_ja": "都心の明かりを背に、河川敷の草地でマツムシが澄んだ声で鳴く。",
-   "description_en": "With city lights behind, pine crickets sing clearly in the grassland of the riverbanks."
+   "description_en": "With city lights behind, pine crickets sing clearly in the grassland of the riverbanks.",
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Yodogawa_Miyakojima.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Yodogawa_Miyakojima.jpg",
+    "file": "Yodogawa Miyakojima.jpg",
+    "artist": "Bakkai",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "via": "wikipedia",
+    "article_ja": "淀川"
+   }
   },
   {
    "id": 64,
@@ -1984,7 +2596,8 @@
    "months_basis_ja": "8月23日、24日",
    "months_estimated": false,
    "description_ja": "河内音頭の発祥地とされる寺の境内で、8月に盆踊りが行われる。",
-   "description_en": "The temple said to be the birthplace of Kawachi Ondo hosts a lively Bon dance each August."
+   "description_en": "The temple said to be the birthplace of Kawachi Ondo hosts a lively Bon dance each August.",
+   "image": null
   },
   {
    "id": 65,
@@ -2010,7 +2623,17 @@
    "months_basis_ja": "2月下旬から4月下旬",
    "months_estimated": false,
    "description_ja": "早春、イカナゴ漁の船が一斉に出漁し、ウインチの音とカモメの声が港を包む。",
-   "description_en": "In early spring, sand eel boats head out together, with winches whirring and gulls calling around the port."
+   "description_en": "In early spring, sand eel boats head out together, with winches whirring and gulls calling around the port.",
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Ikanago.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ikanago.jpg",
+    "file": "Ikanago.jpg",
+    "artist": "Izuzuki",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "via": "wikipedia",
+    "article_ja": "イカナゴ"
+   }
   },
   {
    "id": 66,
@@ -2034,7 +2657,17 @@
    "months_basis_ja": "10月14日、15日",
    "months_estimated": false,
    "description_ja": "10月、神輿をぶつけ合う祭りで、だんじりの太鼓が御旅山に響き渡る。",
-   "description_en": "In October, portable shrines clash and festival drums echo off the hillside."
+   "description_en": "In October, portable shrines clash and festival drums echo off the hillside.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Nada_no_Kenka_matsuri_%2C_himeji01.JPG/960px-Nada_no_Kenka_matsuri_%2C_himeji01.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Nada_no_Kenka_matsuri_,_himeji01.JPG",
+    "file": "Nada no Kenka matsuri , himeji01.JPG",
+    "artist": "sailko",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "灘のけんか祭り"
+   }
   },
   {
    "id": 67,
@@ -2069,7 +2702,17 @@
    "months_basis_ja": "鹿の鳴き声は1年をとおして。東大寺の鐘は20時、興福寺の鐘は6時・正午・18時",
    "months_estimated": false,
    "description_ja": "早朝は鹿寄せのホルンと鹿の声、夕方は東大寺や興福寺の鐘が響く。",
-   "description_en": "Deer gather to a horn call in the morning, and the bells of Todai-ji and Kofuku-ji ring at dusk."
+   "description_en": "Deer gather to a horn call in the morning, and the bells of Todai-ji and Kofuku-ji ring at dusk.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Five-storied_Pagoda%2C_Kofuku-ji_-_Nara%2C_Japan_-_DSC07497.jpg/960px-Five-storied_Pagoda%2C_Kofuku-ji_-_Nara%2C_Japan_-_DSC07497.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Five-storied_Pagoda,_Kofuku-ji_-_Nara,_Japan_-_DSC07497.jpg",
+    "file": "Five-storied Pagoda, Kofuku-ji - Nara, Japan - DSC07497.jpg",
+    "artist": "Daderot",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "via": "wikipedia",
+    "article_ja": "奈良公園"
+   }
   },
   {
    "id": 68,
@@ -2104,7 +2747,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "山頂の巨石の小さな穴に耳を当てると、遠くの紀の川の流れのような音が聞こえる。",
-   "description_en": "Put your ear to a small hole in a boulder on the summit and hear what sounds like the distant Kinokawa River."
+   "description_en": "Put your ear to a small hole in a boulder on the summit and hear what sounds like the distant Kinokawa River.",
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Kinokawa_Hanwa-line.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kinokawa_Hanwa-line.jpg",
+    "file": "Kinokawa Hanwa-line.jpg",
+    "artist": "Bakkai",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "via": "wikipedia",
+    "article_ja": "紀の川"
+   }
   },
   {
    "id": 69,
@@ -2139,7 +2792,17 @@
    "months_basis_ja": "1年をとおして。とくに多雨の時期",
    "months_estimated": false,
    "description_ja": "落差133mの滝の轟き。熊野の信仰を象徴する音。",
-   "description_en": "The roar of a 133 m waterfall, a sound bound up with Kumano's sacred landscape."
+   "description_en": "The roar of a 133 m waterfall, a sound bound up with Kumano's sacred landscape.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nachi_Falls_2025-10-13.jpg/960px-Nachi_Falls_2025-10-13.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Nachi_Falls_2025-10-13.jpg",
+    "file": "Nachi Falls 2025-10-13.jpg",
+    "artist": "Alpsdake",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "via": "wikipedia",
+    "article_ja": "那智滝"
+   }
   },
   {
    "id": 70,
@@ -2168,7 +2831,17 @@
    "months_basis_ja": "10月中旬から翌年の3月中旬",
    "months_estimated": false,
    "description_ja": "中海に面する公園で、冬はコハクチョウやガンカモ類の声が響く。",
-   "description_en": "By Lake Nakaumi, tundra swans, geese and ducks fill the winter air with calls."
+   "description_en": "By Lake Nakaumi, tundra swans, geese and ducks fill the winter air with calls.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Yonago_mizudorikoen.jpg/960px-Yonago_mizudorikoen.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Yonago_mizudorikoen.jpg",
+    "file": "Yonago mizudorikoen.jpg",
+    "artist": "Lemon-s",
+    "license": "Public domain",
+    "license_url": "",
+    "via": "wikipedia",
+    "article_ja": "米子水鳥公園"
+   }
   },
   {
    "id": 71,
@@ -2195,7 +2868,17 @@
    "months_basis_ja": "初夏から初秋（6月から9月）",
    "months_estimated": false,
    "description_ja": "温泉街を流れる川のせせらぎに、カジカガエルの笛のような声が重なる。",
-   "description_en": "The murmur of a river through a hot spring town mixes with the flute-like calls of kajika frogs."
+   "description_en": "The murmur of a river through a hot spring town mixes with the flute-like calls of kajika frogs.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Misasa_onsen_kawaranoyu_202106.jpg/960px-Misasa_onsen_kawaranoyu_202106.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Misasa_onsen_kawaranoyu_202106.jpg",
+    "file": "Misasa onsen kawaranoyu 202106.jpg",
+    "artist": "三塚",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "三朝温泉"
+   }
   },
   {
    "id": 72,
@@ -2230,7 +2913,8 @@
    "months_basis_ja": "1年をとおして。紙すきが行われる朝から晩まで",
    "months_estimated": false,
    "description_ja": "紙すき舟の水を「チャッポン、チャッポン」と揺らす伝統の和紙づくりの音。",
-   "description_en": "The splash of pulp rocked in the vat, \"chappon, chappon\", in traditional paper making."
+   "description_en": "The splash of pulp rocked in the vat, \"chappon, chappon\", in traditional paper making.",
+   "image": null
   },
   {
    "id": 73,
@@ -2265,7 +2949,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "砂浜を歩くと「キュッキュッ」と心地よく鳴る。地元で保全活動が続く。",
-   "description_en": "The sand squeaks pleasantly underfoot; the local community works to keep it clean."
+   "description_en": "The sand squeaks pleasantly underfoot; the local community works to keep it clean.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/%E7%90%B4%E3%83%B6%E6%B5%9C060730-1.jpg/960px-%E7%90%B4%E3%83%B6%E6%B5%9C060730-1.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:%E7%90%B4%E3%83%B6%E6%B5%9C060730-1.jpg",
+    "file": "琴ヶ浜060730-1.jpg",
+    "artist": "大江万里",
+    "license": "Public domain",
+    "license_url": "",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 74,
@@ -2300,7 +2994,8 @@
    "months_basis_ja": "1年をとおして。とくに春から夏",
    "months_estimated": false,
    "description_ja": "鍾乳洞から湧く水が川に注ぎ、水車の回る音とせせらぎが重なる。",
-   "description_en": "Water from a limestone cave feeds the river, where waterwheels turn among the murmuring shallows."
+   "description_en": "Water from a limestone cave feeds the river, where waterwheels turn among the murmuring shallows.",
+   "image": null
   },
   {
    "id": 75,
@@ -2335,7 +3030,17 @@
    "months_basis_ja": "1年をとおして。とくに満開の桜の時期と紅葉の時期",
    "months_estimated": false,
    "description_ja": "桜並木のある宿場町の両脇を流れる小川の音。今も生活用水として使われる。",
-   "description_en": "Brooks run along both sides of an old post town lined with cherry trees, still used in daily life."
+   "description_en": "Brooks run along both sides of an old post town lined with cherry trees, still used in daily life.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Triumphal_Return_Cherry_Blossom_Street.jpg/960px-Triumphal_Return_Cherry_Blossom_Street.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Triumphal_Return_Cherry_Blossom_Street.jpg",
+    "file": "Triumphal Return Cherry Blossom Street.jpg",
+    "artist": "Phronimoi",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 76,
@@ -2370,7 +3075,17 @@
    "months_basis_ja": "8月6日の平和記念式典。チャイムは毎朝8時15分。ほかに訪れる人が自由に鳴らせる",
    "months_estimated": false,
    "description_ja": "平和記念公園の鐘。訪れた人が自由に鳴らすことができ、8月6日には式典で鳴らされる。",
-   "description_en": "A bell in the Peace Memorial Park that anyone may ring; it sounds at the ceremony every August 6."
+   "description_en": "A bell in the Peace Memorial Park that anyone may ring; it sounds at the ceremony every August 6.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Hiroshima_Peace_Bell_20170310.jpg/960px-Hiroshima_Peace_Bell_20170310.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Hiroshima_Peace_Bell_20170310.jpg",
+    "file": "Hiroshima Peace Bell 20170310.jpg",
+    "artist": "そらみみ",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 77,
@@ -2405,7 +3120,17 @@
    "months_basis_ja": "毎日18時と大晦日（除夜の鐘）",
    "months_estimated": false,
    "description_ja": "坂の町の寺から、毎夕の鐘が瀬戸内海に向かって響く。",
-   "description_en": "From a hillside temple, the evening bell sounds over the town and the Seto Inland Sea."
+   "description_en": "From a hillside temple, the evening bell sounds over the town and the Seto Inland Sea.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Senkoji_Onomichi16s3872.jpg/960px-Senkoji_Onomichi16s3872.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Senkoji_Onomichi16s3872.jpg",
+    "file": "Senkoji Onomichi16s3872.jpg",
+    "artist": "663highland",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "via": "wikipedia",
+    "article_ja": "千光寺 (尾道市)"
+   }
   },
   {
    "id": 78,
@@ -2437,7 +3162,17 @@
    "months_basis_ja": "3月から11月のSL運転日",
    "months_estimated": false,
    "description_ja": "SLやまぐち号が山あいの線路を力強い汽笛とともに走る。",
-   "description_en": "The SL Yamaguchi steam train runs through the hills with a powerful whistle."
+   "description_en": "The SL Yamaguchi steam train runs through the hills with a powerful whistle.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/C571_SL_Yamaguchi_20170909.jpg/960px-C571_SL_Yamaguchi_20170909.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:C571_SL_Yamaguchi_20170909.jpg",
+    "file": "C571 SL Yamaguchi 20170909.jpg",
+    "artist": "khws4v1",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "via": "wikipedia",
+    "article_ja": "SLやまぐち号"
+   }
   },
   {
    "id": 79,
@@ -2466,7 +3201,17 @@
    "months_basis_ja": "春と秋の大潮時期 → 「春と秋の大潮時期」を3〜5月・9〜11月と読み替えた（推定）",
    "months_estimated": true,
    "description_ja": "潮の満ち引きで大小の渦が生まれ、春と秋の大潮の頃に最大となる。",
-   "description_en": "Tidal currents create whirlpools of all sizes, largest at the spring tides of spring and autumn."
+   "description_en": "Tidal currents create whirlpools of all sizes, largest at the spring tides of spring and autumn.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Naruto_Whirlpools_taken_4-21-2008.jpg/960px-Naruto_Whirlpools_taken_4-21-2008.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Naruto_Whirlpools_taken_4-21-2008.jpg",
+    "file": "Naruto Whirlpools taken 4-21-2008.jpg",
+    "artist": "Hellbuny",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "鳴門の渦潮"
+   }
   },
   {
    "id": 80,
@@ -2491,7 +3236,17 @@
    "months_basis_ja": "7月から8月中旬",
    "months_estimated": false,
    "description_ja": "夏が近づくと街角から三味線の「ぞめき」の練習が聞こえ、8月の本番を迎える。",
-   "description_en": "As summer nears, shamisen practice drifts from street corners ahead of the August dance festival."
+   "description_en": "As summer nears, shamisen practice drifts from street corners ahead of the August dance festival.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Awa-odori_2008_Tokushima.jpg/960px-Awa-odori_2008_Tokushima.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Awa-odori_2008_Tokushima.jpg",
+    "file": "Awa-odori 2008 Tokushima.jpg",
+    "artist": "Rosino",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "via": "wikipedia",
+    "article_ja": "阿波踊り"
+   }
   },
   {
    "id": 81,
@@ -2526,7 +3281,17 @@
    "months_basis_ja": "1年をとおして。とくにお遍路さんが多い春と秋",
    "months_estimated": false,
    "description_ja": "四国遍路の最後の札所で、寺の鐘とお遍路さんの鈴の音が響く。",
-   "description_en": "At the last temple of the Shikoku pilgrimage, the temple bell mixes with the small bells of pilgrims."
+   "description_en": "At the last temple of the Shikoku pilgrimage, the temple bell mixes with the small bells of pilgrims.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Ookubozi_01.jpg/960px-Ookubozi_01.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ookubozi_01.jpg",
+    "file": "Ookubozi 01.jpg",
+    "artist": "Dokudami",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "wikipedia",
+    "article_ja": "大窪寺"
+   }
   },
   {
    "id": 82,
@@ -2550,7 +3315,17 @@
    "months_basis_ja": "毎年6月13日から1週間くらい",
    "months_estimated": false,
    "description_ja": "6月、田植えに合わせてため池の栓を抜き、勢いよく水が流れ出す。",
-   "description_en": "In June, the plug of a great irrigation pond is pulled for rice planting and water rushes out."
+   "description_en": "In June, the plug of a great irrigation pond is pulled for rice planting and water rushes out.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Mannou-ike_reservoir.jpg/960px-Mannou-ike_reservoir.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Mannou-ike_reservoir.jpg",
+    "file": "Mannou-ike reservoir.jpg",
+    "artist": "Navian",
+    "license": "Public domain",
+    "license_url": "",
+    "via": "wikipedia",
+    "article_ja": "満濃池"
+   }
   },
   {
    "id": 83,
@@ -2585,7 +3360,17 @@
    "months_basis_ja": "1年をとおして。とくに空気の乾いている秋から冬",
    "months_estimated": false,
    "description_ja": "道後温泉本館の楼上で、毎日6時、正午、18時に太鼓が打たれる。",
-   "description_en": "Drums are beaten atop the bathhouse at 6 am, noon and 6 pm every day."
+   "description_en": "Drums are beaten atop the bathhouse at 6 am, noon and 6 pm every day.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/D%C5%8Dgo_Onsen.jpg/960px-D%C5%8Dgo_Onsen.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:D%C5%8Dgo_Onsen.jpg",
+    "file": "Dōgo Onsen.jpg",
+    "artist": "Arnaud Malon",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "via": "wikipedia",
+    "article_ja": "道後温泉本館"
+   }
   },
   {
    "id": 84,
@@ -2620,7 +3405,17 @@
    "months_basis_ja": "1年をとおして。とくに波の高いとき",
    "months_estimated": false,
    "description_ja": "空海が修行したと伝わる洞窟に、太平洋の波音が響く。",
-   "description_en": "Pacific waves echo inside the cave where the monk Kukai is said to have trained."
+   "description_en": "Pacific waves echo inside the cave where the monk Kukai is said to have trained.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Mikurodo_01.JPG/960px-Mikurodo_01.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Mikurodo_01.JPG",
+    "file": "Mikurodo 01.JPG",
+    "artist": "Reggaeman",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "御厨人窟"
+   }
   },
   {
    "id": 85,
@@ -2644,7 +3439,17 @@
    "months_basis_ja": "7月12日〜15日（7月1日に始まる）",
    "months_estimated": false,
    "description_ja": "7月、「オイサッ」の掛け声とともに山笠を担いで博多の町を駆ける。",
-   "description_en": "In July, teams race through Hakata carrying floats and shouting \"oisa\"."
+   "description_en": "In July, teams race through Hakata carrying floats and shouting \"oisa\".",
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/H17_daikokunagare.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:H17_daikokunagare.jpg",
+    "file": "H17 daikokunagare.jpg",
+    "artist": "枝折",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "via": "wikipedia",
+    "article_ja": "博多祇園山笠"
+   }
   },
   {
    "id": 86,
@@ -2679,7 +3484,17 @@
    "months_basis_ja": "毎月18日の13時と大晦日の除夜の鐘",
    "months_estimated": false,
    "description_ja": "日本最古とされる梵鐘。毎月18日と大晦日に鳴らされる。",
-   "description_en": "Said to be the oldest temple bell in Japan, rung on the 18th of each month and on New Year's Eve."
+   "description_en": "Said to be the oldest temple bell in Japan, rung on the 18th of each month and on New Year's Eve.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Kanzeonji_%28Dazaifu%29_hondou.JPG/960px-Kanzeonji_%28Dazaifu%29_hondou.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kanzeonji_(Dazaifu)_hondou.JPG",
+    "file": "Kanzeonji (Dazaifu) hondou.JPG",
+    "artist": "Saigen Jiro",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "via": "wikipedia",
+    "article_ja": "観世音寺"
+   }
   },
   {
    "id": 87,
@@ -2714,7 +3529,17 @@
    "months_basis_ja": "1年をとおして。とくに春秋の大潮のころ",
    "months_estimated": false,
    "description_ja": "幅700mほどの海峡を激しい潮流が流れ、大小の船が汽笛を鳴らして行き交う。",
-   "description_en": "Fast currents run through the 700 m wide strait as ships pass with sounding horns."
+   "description_en": "Fast currents run through the 700 m wide strait as ships pass with sounding horns.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Kanmonkyo_Bridge_and_Mekari_acrossing_Kammon_Strait_20150621.JPG/960px-Kanmonkyo_Bridge_and_Mekari_acrossing_Kammon_Strait_20150621.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kanmonkyo_Bridge_and_Mekari_acrossing_Kammon_Strait_20150621.JPG",
+    "file": "Kanmonkyo Bridge and Mekari acrossing Kammon Strait 20150621.JPG",
+    "artist": "そらみみ (Soramimi)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 88,
@@ -2739,7 +3564,17 @@
    "months_basis_ja": "10月1日から10月末日の夜（練習）、11月2日から4日",
    "months_estimated": false,
    "description_ja": "秋祭りで14台の曳山が笛と太鼓、鉦の囃子とともに町を巡る。",
-   "description_en": "In this autumn festival, 14 giant floats roll through town to flutes, drums and gongs."
+   "description_en": "In this autumn festival, 14 giant floats roll through town to flutes, drums and gongs.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Hikiyama.jpg/960px-Hikiyama.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Hikiyama.jpg",
+    "file": "Hikiyama.jpg",
+    "artist": "Wikimedia Commons",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "via": "wikipedia",
+    "article_ja": "唐津くんち"
+   }
   },
   {
    "id": 89,
@@ -2774,7 +3609,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "窯元の集まる大川内山で、陶石を砕く唐臼やろくろの音が聞こえる。",
-   "description_en": "In the kiln village of Okawachiyama, pestles crush pottery stone and wheels turn."
+   "description_en": "In the kiln village of Okawachiyama, pestles crush pottery stone and wheels turn.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Nabeshimayaki_Okawachiyama_Imari-shi_Saga-ken_PB110114.jpg/960px-Nabeshimayaki_Okawachiyama_Imari-shi_Saga-ken_PB110114.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Nabeshimayaki_Okawachiyama_Imari-shi_Saga-ken_PB110114.jpg",
+    "file": "Nabeshimayaki Okawachiyama Imari-shi Saga-ken PB110114.jpg",
+    "artist": "Akiyoshi's Room",
+    "license": "Public domain",
+    "license_url": "",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 90,
@@ -2809,7 +3654,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "被爆して枯れたかに見えた2本の楠が芽吹き、今も葉ずれの音を立てる。",
-   "description_en": "Two camphor trees that seemed dead after the atomic bombing sprouted again and still rustle in the wind."
+   "description_en": "Two camphor trees that seemed dead after the atomic bombing sprouted again and still rustle in the wind.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Nagasaki_Sanno_Shrine_1.jpg/960px-Nagasaki_Sanno_Shrine_1.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Nagasaki_Sanno_Shrine_1.jpg",
+    "file": "Nagasaki Sanno Shrine 1.jpg",
+    "artist": "ぱちょぴ（pacyopi）",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "山王神社 (長崎市)"
+   }
   },
   {
    "id": 91,
@@ -2842,7 +3697,17 @@
    "months_basis_ja": "田植え期間（5月〜6月）をのぞく放水時（要予約）",
    "months_estimated": false,
    "description_ja": "江戸時代の石造りの水路橋から、弧を描いて勢いよく水が放たれる。",
-   "description_en": "Water shoots in an arc from the sides of an Edo-period stone aqueduct bridge."
+   "description_en": "Water shoots in an arc from the sides of an Edo-period stone aqueduct bridge.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tsujyunkyo_edit.jpg/960px-Tsujyunkyo_edit.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Tsujyunkyo_edit.jpg",
+    "file": "Tsujyunkyo edit.jpg",
+    "artist": "masamic, edited by Laitche",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "via": "wikipedia",
+    "article_ja": "通潤橋"
+   }
   },
   {
    "id": 92,
@@ -2877,7 +3742,17 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "約300頭の野生のイルカがすみ、群れで泳ぐ息づかいが船から聞こえる。",
-   "description_en": "About 300 wild dolphins live here, and their breathing can be heard from boats."
+   "description_en": "About 300 wild dolphins live here, and their breathing can be heard from boats.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Tsuji-Shima_Island%2C_Amakusa_Kumamoto_Aerial_photograph.2013.jpg/960px-Tsuji-Shima_Island%2C_Amakusa_Kumamoto_Aerial_photograph.2013.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Tsuji-Shima_Island,_Amakusa_Kumamoto_Aerial_photograph.2013.jpg",
+    "file": "Tsuji-Shima Island, Amakusa Kumamoto Aerial photograph.2013.jpg",
+    "artist": "国土地理院",
+    "license": "Attribution",
+    "license_url": "",
+    "via": "wikipedia",
+    "article_ja": "通詞島"
+   }
   },
   {
    "id": 93,
@@ -2912,7 +3787,17 @@
    "months_basis_ja": "1年中いつでも（大晦日は休み）。新緑のときもよし、秋色のなかもよい",
    "months_estimated": false,
    "description_ja": "川の水の力で動く唐臼が、陶土をつく音を山あいの里に響かせる。",
-   "description_en": "Water-powered pestles pound clay for pottery, thudding through the mountain hamlet."
+   "description_en": "Water-powered pestles pound clay for pottery, thudding through the mountain hamlet.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Ondayoshie.JPG/960px-Ondayoshie.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ondayoshie.JPG",
+    "file": "Ondayoshie.JPG",
+    "artist": "fitm",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "小鹿田焼"
+   }
   },
   {
    "id": 94,
@@ -2947,7 +3832,17 @@
    "months_basis_ja": "1年をとおして。とくに中秋の名月より晩秋にかけて",
    "months_estimated": false,
    "description_ja": "「荒城の月」のイメージとされる城跡で、松の老木を吹き抜ける風の音。",
-   "description_en": "Wind through old pines on the castle ruins said to have inspired the song \"Kojo no Tsuki\"."
+   "description_en": "Wind through old pines on the castle ruins said to have inspired the song \"Kojo no Tsuki\".",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Bungo_Oka_Castle_1.JPG/960px-Bungo_Oka_Castle_1.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Bungo_Oka_Castle_1.JPG",
+    "file": "Bungo Oka Castle 1.JPG",
+    "artist": "Mukai",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 95,
@@ -2982,7 +3877,8 @@
    "months_basis_ja": "1年をとおして",
    "months_estimated": false,
    "description_ja": "巨石に囲まれた滝つぼにこもる水音が、のぞき込むと轟きとなって聞こえる。",
-   "description_en": "Water falling into a pool walled by boulders becomes a roar when you lean over to look."
+   "description_en": "Water falling into a pool walled by boulders becomes a roar when you lean over to look.",
+   "image": null
   },
   {
    "id": 96,
@@ -3017,7 +3913,17 @@
    "months_basis_ja": "1年をとおして。とくに秋の夕方から朝にかけて",
    "months_estimated": false,
    "description_ja": "とくに秋の夜、雄鹿が雌を呼ぶ「キーン」という声が高原に響く。",
-   "description_en": "Especially on autumn nights, stags call to hinds with high-pitched cries across the highlands."
+   "description_en": "Especially on autumn nights, stags call to hinds with high-pitched cries across the highlands.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Ebino_Plateau.jpg/960px-Ebino_Plateau.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ebino_Plateau.jpg",
+    "file": "Ebino Plateau.jpg",
+    "artist": "Ray_go",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "えびの高原"
+   }
   },
   {
    "id": 97,
@@ -3046,7 +3952,17 @@
    "months_basis_ja": "10月中旬から翌年の3月中旬",
    "months_estimated": false,
    "description_ja": "毎冬1万羽を超えるツルが飛来し、「クルー、クルー」という声が空に響く。",
-   "description_en": "Over 10,000 cranes winter here, their bugling calls filling the sky."
+   "description_en": "Over 10,000 cranes winter here, their bugling calls filling the sky.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Izumi_crane_migration_ground_-_Dec_31%2C_2011.jpg/960px-Izumi_crane_migration_ground_-_Dec_31%2C_2011.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Izumi_crane_migration_ground_-_Dec_31,_2011.jpg",
+    "file": "Izumi crane migration ground - Dec 31, 2011.jpg",
+    "artist": "Masahiko OHKUBO",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 98,
@@ -3081,7 +3997,17 @@
    "months_basis_ja": "定期運行のとき → 「定期運行のとき」とあり、通年とした（推定）",
    "months_estimated": true,
    "description_ja": "屋久島の山を流れる渓流の音に沿って、森林軌道のトロッコが走る。",
-   "description_en": "A forest railway runs along a mountain stream on Yakushima, its rattle mixed with rushing water."
+   "description_en": "A forest railway runs along a mountain stream on Yakushima, its rattle mixed with rushing water.",
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Ab%C5%8D_Forest_Railway_03.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ab%C5%8D_Forest_Railway_03.jpg",
+    "file": "Abō Forest Railway 03.jpg",
+    "artist": "mako 10",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "via": "wikipedia",
+    "article_ja": "安房森林軌道"
+   }
   },
   {
    "id": 99,
@@ -3113,7 +4039,17 @@
    "months_basis_ja": "オオクイナ1月から5月の夕方、アカショウビン4月から9月、ハラブチガエル4月から9月の夜間、リュウキュウクマゼミ6月から9月の日中",
    "months_estimated": false,
    "description_ja": "西表島のマングローブや森で、アカショウビンやカエル、セミなど亜熱帯の生き物の声が聞こえる。",
-   "description_en": "In the mangroves and forest of Iriomote, ruddy kingfishers, frogs and cicadas of the subtropics call."
+   "description_en": "In the mangroves and forest of Iriomote, ruddy kingfishers, frogs and cicadas of the subtropics call.",
+   "image": {
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Iriomote_mangrove_2007-04-04.jpg/960px-Iriomote_mangrove_2007-04-04.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Iriomote_mangrove_2007-04-04.jpg",
+    "file": "Iriomote mangrove 2007-04-04.jpg",
+    "artist": "No machine-readable author provided. Geomr~commonswiki assumed (based on copyrig",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "via": "commons",
+    "article_ja": null
+   }
   },
   {
    "id": 100,
@@ -3140,7 +4076,17 @@
    "months_basis_ja": "旧暦7月15日、16日。本番の2か月ほど前から練習 → 旧暦7月15・16日（新暦では8月〜9月上旬）と本番前約2か月の練習期間から6〜9月とした（推定）",
    "months_estimated": true,
    "description_ja": "旧盆に、太鼓と三線、唄に合わせて踊り歩く沖縄の伝統行事。",
-   "description_en": "At the old Bon festival, groups dance through the streets to drums, sanshin and song."
+   "description_en": "At the old Bon festival, groups dance through the streets to drums, sanshin and song.",
+   "image": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Seragaki_eisa.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Seragaki_eisa.jpg",
+    "file": "Seragaki eisa.jpg",
+    "artist": "Kasanui]＆KI]",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "via": "wikipedia",
+    "article_ja": "エイサー"
+   }
   }
  ]
 }

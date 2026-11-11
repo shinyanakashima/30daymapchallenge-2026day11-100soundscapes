@@ -21,6 +21,7 @@
       breakdown: function (s, y) { return s + ' in season · ' + y + ' year-round'; },
       yearRound: 'Year-round',
       estimated: 'estimated',
+      photo: 'Photo',
       when: 'When',
       spot: 'Where to listen',
       pointNote: 'Point at the site',
@@ -43,10 +44,12 @@
         '<li>Points are representative locations. Rivers, coasts, wetlands and towns are shown with one point.</li>' +
         '<li>The months are a guide, based on the descriptions in the official pamphlet. Months marked “estimated” were inferred from wording such as “autumn” or “early summer”.</li>' +
         '<li>Descriptions are short summaries written for this map, not quotations.</li>' +
+        '<li>Photos are freely licensed images from Wikipedia and Wikimedia Commons. Some show the place or the subject (a bird, a festival) rather than the exact listening spot. Credits are shown under each photo.</li>' +
         '</ul>' +
         '<h3>Sources</h3><ul>' +
         '<li>Ministry of the Environment, Japan: <a href="https://www.env.go.jp/air/life/nihon_no_oto/index.html" target="_blank" rel="noopener">Nokoshitai “Nihon no Oto Fukei 100-sen”</a> (overview and pamphlet PDFs)</li>' +
         '<li>English names refer to Wikipedia “100 Soundscapes of Japan”.</li>' +
+        '<li>Photos: Wikipedia (ja) and Wikimedia Commons, each under the licence shown with the photo.</li>' +
         '<li>Base map: land outline from <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a>; detail from <a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">GSI Tiles (blank map)</a>, Geospatial Information Authority of Japan.</li>' +
         '</ul>' +
         '<p>#30DayMapChallenge 2026 · Day 11 · Senses: Sound · <a href="https://github.com/shinyanakashima/30daymapchallenge-2026day11-100soundscapes" target="_blank" rel="noopener">Data &amp; code</a></p>' +
@@ -66,6 +69,7 @@
       breakdown: function (s, y) { return '季節の音 ' + s + '件・通年 ' + y + '件'; },
       yearRound: '通年',
       estimated: '推定',
+      photo: '写真',
       when: '聞ける時期',
       spot: 'よく聞けるところ',
       pointNote: '地点',
@@ -88,10 +92,12 @@
         '<li>地点は代表点です。川・海岸・湿原・町並みなど範囲の広いものも1点で示しています。</li>' +
         '<li>聞ける月は、パンフレットの説明文などから判断した目安です。「推定」は「秋」「初夏」などの表現から月を読み替えたものです。</li>' +
         '<li>説明文はこの地図のために書いた短い要約で、パンフレットからの転載ではありません。</li>' +
+        '<li>写真はWikipedia・Wikimedia Commonsの自由ライセンス画像です。聞く場所そのものではなく、その土地や対象（鳥・祭りなど）の写真の場合があります。作者とライセンスは写真の下に表示しています。</li>' +
         '</ul>' +
         '<h3>出典</h3><ul>' +
         '<li>環境省「<a href="https://www.env.go.jp/air/life/nihon_no_oto/index.html" target="_blank" rel="noopener">残したい“日本の音風景100選”</a>」（概要・パンフレット）</li>' +
         '<li>英語名は英語版Wikipedia「100 Soundscapes of Japan」を参考にしました。</li>' +
+        '<li>写真：Wikipedia（日本語版）・Wikimedia Commons（各写真に記載のライセンス）</li>' +
         '<li>背景地図：陸域の輪郭 <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a>、詳細 <a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">地理院タイル（白地図）</a>（国土地理院）</li>' +
         '</ul>' +
         '<p>#30DayMapChallenge 2026・Day 11・Senses: Sound・<a href="https://github.com/shinyanakashima/30daymapchallenge-2026day11-100soundscapes" target="_blank" rel="noopener">データとコード</a></p>' +
@@ -224,33 +230,6 @@
             'circle-blur': 0.6
           }
         });
-        // soft light that spreads out with each wave
-        map.addLayer({
-          id: 'bloom', type: 'circle', source: 'pts',
-          paint: { 'circle-radius': 0, 'circle-color': catColor(), 'circle-opacity': 0, 'circle-blur': 1 }
-        });
-        // ripples: a sharp ring plus a wide faint ring around it for glow
-        for (var k = 0; k < RINGS; k++) {
-          map.addLayer({
-            id: 'rglow' + k, type: 'circle', source: 'pts',
-            paint: {
-              'circle-radius': 0, 'circle-color': 'rgba(0,0,0,0)', 'circle-blur': 0.5,
-              'circle-stroke-color': catColor(), 'circle-stroke-width': 6, 'circle-stroke-opacity': 0
-            }
-          });
-          map.addLayer({
-            id: 'ripple' + k, type: 'circle', source: 'pts',
-            paint: {
-              'circle-radius': 0, 'circle-color': 'rgba(0,0,0,0)',
-              'circle-stroke-color': catColor(), 'circle-stroke-width': 1.5, 'circle-stroke-opacity': 0
-            }
-          });
-        }
-        // glowing core that flares each time a wave is sent out
-        map.addLayer({
-          id: 'core', type: 'circle', source: 'pts',
-          paint: { 'circle-radius': 10, 'circle-color': catColor(), 'circle-opacity': 0, 'circle-blur': 1 }
-        });
         map.addLayer({
           id: 'dot', type: 'circle', source: 'pts',
           paint: {
@@ -317,7 +296,8 @@
     slider.setAttribute('aria-valuetext', t.monthName(m) + ': ' + (nSeason + nYear) + ' ' + t.countUnit);
     Array.prototype.forEach.call($('ticks').children, function (b, i) { b.classList.toggle('on', i + 1 === m); });
     if (state.selected) renderCard();
-    if (reduceMotion && reduceMotion.matches) drawStatic();
+    refreshActive();
+    if (!rafId) drawStill();
   }
 
   function setMonth(m) {
@@ -410,6 +390,26 @@
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 
+  function renderPhoto(it, t) {
+    var fig = $('cardPhoto'), img = $('cardImg');
+    var im = it.image;
+    if (!im) { fig.hidden = true; img.removeAttribute('src'); return; }
+    if (img.getAttribute('src') !== im.url) {
+      fig.hidden = true;
+      img.onload = function () { fig.hidden = false; };
+      img.onerror = function () { fig.hidden = true; };
+      img.src = im.url;
+    } else {
+      fig.hidden = !img.complete || !img.naturalWidth;
+    }
+    img.alt = state.lang === 'ja' ? it.name_ja : it.name_en;
+    var lic = im.license_url
+      ? '<a href="' + esc(im.license_url) + '" target="_blank" rel="noopener">' + esc(im.license) + '</a>'
+      : esc(im.license);
+    $('cardCredit').innerHTML = esc(t.photo) + ': <a href="' + esc(im.source_page) + '" target="_blank" rel="noopener">' +
+      esc(im.artist) + '</a> / ' + lic + ' · Wikimedia Commons';
+  }
+
   function renderCard() {
     var it = byId[state.selected];
     if (!it) return;
@@ -417,6 +417,7 @@
     var ja = state.lang === 'ja';
     var col = COLORS[it.category];
     $('cardCat').innerHTML = '<i class="sw ' + it.category + '"></i>' + esc(t['cat_' + it.category]) + ' · No. ' + it.id;
+    renderPhoto(it, t);
     $('cardName').textContent = ja ? it.name_ja : it.name_en;
     $('cardAlt').textContent = ja ? it.name_en : it.name_ja;
     $('cardPlace').textContent = ja
@@ -482,103 +483,124 @@
   });
 
   // ---------- ripple animation ----------
-  var rafId = null;
-  var RINGS = 3;          // rings in flight per point
-  var GROUPS = 5;         // points are split into groups so they do not pulse in step
-  var PERIOD = 3600;      // ms for one ring to grow and vanish
-  var lastMonthChange = -1e9;
-  var ACTIVE = ['all', ['==', S, 2], ['!', H]];
-  var GROUP = ['%', ['get', 'id'], GROUPS];
+  // Ripples are drawn on a 2D canvas laid over the map. Each frame only the
+  // in-season points are projected and drawn, so the motion stays smooth
+  // without touching the map style.
+  var fx = document.createElement('canvas');
+  fx.className = 'fx-canvas';
+  fx.setAttribute('aria-hidden', 'true');
+  var mapEl = map.getContainer();
+  mapEl.insertBefore(fx, mapEl.querySelector('.maplibregl-control-container'));
+  var ctx = fx.getContext('2d');
+  var dpr = 1;
+  function sizeCanvas() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    fx.width = Math.round(mapEl.clientWidth * dpr);
+    fx.height = Math.round(mapEl.clientHeight * dpr);
+  }
+  sizeCanvas();
+  map.on('resize', function () { sizeCanvas(); if (!rafId) drawStill(); });
 
+  var RGB = {};
+  Object.keys(COLORS).forEach(function (k) {
+    var h = COLORS[k].slice(1);
+    RGB[k] = [parseInt(h.slice(0, 2), 16), parseInt(h.slice(2, 4), 16), parseInt(h.slice(4, 6), 16)].join(',');
+  });
+
+  var rafId = null;
+  var RINGS = 3;           // rings in flight per point
+  var PERIOD = 3600;       // ms for one ring to grow and vanish
+  var lastMonthChange = -1e9;
+  var active = [];         // in-season, visible items
+
+  function refreshActive() {
+    active = items.filter(function (it) { return state.cats[it.category] && !it.all_year && it.months.indexOf(state.month) >= 0; })
+      .map(function (it) { return { it: it, seed: (it.id * 0.6180339887) % 1, rgb: RGB[it.category] }; });
+  }
   function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
   function zoomScale() {
     var z = map.getZoom();
     return Math.max(0.55, Math.min(2.2, Math.pow(2, (z - 4.6) * 0.45)));
   }
-  function byGroup(values) {
-    var e = ['match', GROUP];
-    for (var g = 0; g < GROUPS - 1; g++) e.push(g, values[g]);
-    e.push(values[GROUPS - 1]);
-    return e;
-  }
-  // zero for points not in season, so hidden points draw nothing (keeps GPU load low)
-  function only(expr) { return ['case', ACTIVE, expr, 0]; }
 
-  var paintCache = {};
-  function paint(layer, prop, value) {
-    var key = layer + '|' + prop;
-    var str = JSON.stringify(value);
-    if (paintCache[key] === str) return;
-    paintCache[key] = str;
-    map.setPaintProperty(layer, prop, value);
-  }
-  var lastFrame = 0;
-  function frame(ts) {
-    rafId = requestAnimationFrame(frame);
-    if (ts - lastFrame < 32) return;
-    lastFrame = ts;
+  function draw(ts, still) {
+    var w = fx.width / dpr, h = fx.height / dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, w, h);
+    ctx.globalCompositeOperation = 'lighter';
     var sc = zoomScale();
     var maxR = 46 * sc;
-    var burst = Math.max(0, 1 - (ts - lastMonthChange) / 900);
-    for (var k = 0; k < RINGS; k++) {
-      var r = [], o = [], w = [], go = [];
-      for (var g = 0; g < GROUPS; g++) {
-        var ph = ((ts / PERIOD) + k / RINGS + g * 0.37) % 1;
-        var e = easeOut(ph);
-        var fade = Math.pow(1 - ph, 2.2);
-        r.push(+(4 + e * maxR).toFixed(1));
-        o.push(+(fade * 0.95).toFixed(3));
-        w.push((0.4 + 2.6 * (1 - ph)) * Math.min(sc, 1.4));
-        go.push(+(fade * 0.3).toFixed(3));
+    var lw = Math.min(sc, 1.4);
+    var burst = still ? 0 : Math.max(0, 1 - (ts - lastMonthChange) / 900);
+    for (var i = 0; i < active.length; i++) {
+      var a = active[i];
+      var p = map.project([a.it.lon, a.it.lat]);
+      if (p.x < -maxR || p.y < -maxR || p.x > w + maxR || p.y > h + maxR) continue;
+      var c = a.rgb;
+      if (still) {
+        ringAt(p, 10 * Math.min(sc, 1.4), 1.4, 0.7, c);
+        ringAt(p, 18 * Math.min(sc, 1.4), 1.2, 0.35, c);
+        glowAt(p, 12 * Math.min(sc, 1.6), 0.35, c);
+        continue;
       }
-      paint('ripple' + k, 'circle-radius', only(byGroup(r)));
-      paint('ripple' + k, 'circle-stroke-width', byGroup(w));
-      paint('ripple' + k, 'circle-stroke-opacity', only(byGroup(o)));
-      paint('rglow' + k, 'circle-radius', only(byGroup(r)));
-      paint('rglow' + k, 'circle-stroke-width', byGroup(w.map(function (x) { return x * 2.2 + 2; })));
-      paint('rglow' + k, 'circle-stroke-opacity', only(byGroup(go)));
+      var base = ts / PERIOD + a.seed;
+      for (var k = 0; k < RINGS; k++) {
+        var ph = (base + k / RINGS) % 1;
+        var fade = Math.pow(1 - ph, 2.2);
+        var r = 4 + easeOut(ph) * maxR;
+        var width = (0.4 + 2.6 * (1 - ph)) * lw;
+        // wide faint stroke for glow, then the crisp ring
+        ringAt(p, r, width * 2.2 + 2, fade * 0.16, c);
+        ringAt(p, r, width, fade * 0.9, c);
+      }
+      // the newest ring: soft bloom and a flare at the centre when it is born
+      var p0 = (base * RINGS) % 1;
+      var br = 6 + easeOut(p0) * maxR * 0.55;
+      var g = ctx.createRadialGradient(p.x, p.y, br * 0.2, p.x, p.y, br);
+      g.addColorStop(0, 'rgba(' + c + ',0)');
+      g.addColorStop(0.75, 'rgba(' + c + ',' + (Math.pow(1 - p0, 1.5) * 0.18).toFixed(3) + ')');
+      g.addColorStop(1, 'rgba(' + c + ',0)');
+      ctx.fillStyle = g;
+      ctx.beginPath(); ctx.arc(p.x, p.y, br, 0, Math.PI * 2); ctx.fill();
+      glowAt(p, (9 + 5 * Math.pow(1 - p0, 2)) * Math.min(sc, 1.6) * (1 + burst * 1.2),
+        Math.min(0.95, 0.3 + 0.45 * Math.pow(1 - p0, 3) + burst * 0.5), c);
     }
-    // bloom follows the newest ring of each group; core flares when a ring is born
-    var br = [], bo = [], cr = [], co = [];
-    for (var g2 = 0; g2 < GROUPS; g2++) {
-      var p0 = ((ts / PERIOD) * RINGS + g2 * 0.37 * RINGS) % 1;
-      br.push(6 + easeOut(p0) * maxR * 0.55);
-      bo.push(Math.pow(1 - p0, 1.5) * 0.28);
-      cr.push((9 + 5 * Math.pow(1 - p0, 2)) * Math.min(sc, 1.6) * (1 + burst * 1.2));
-      co.push(Math.min(0.95, 0.35 + 0.45 * Math.pow(1 - p0, 3) + burst * 0.5));
-    }
-    paint('bloom', 'circle-radius', only(byGroup(br)));
-    paint('bloom', 'circle-opacity', only(byGroup(bo)));
-    paint('core', 'circle-radius', only(byGroup(cr)));
-    paint('core', 'circle-opacity', only(byGroup(co)));
+    ctx.globalCompositeOperation = 'source-over';
   }
-  function drawStatic() {
-    if (!map.getLayer('ripple0')) return;
-    paintCache = {};
-    var radii = [10, 18, 0];
-    var ops = [0.7, 0.35, 0];
-    for (var k = 0; k < RINGS; k++) {
-      map.setPaintProperty('ripple' + k, 'circle-radius', only(radii[k] || 0));
-      map.setPaintProperty('ripple' + k, 'circle-stroke-width', 1.4);
-      map.setPaintProperty('ripple' + k, 'circle-stroke-opacity', only(ops[k] || 0));
-      map.setPaintProperty('rglow' + k, 'circle-stroke-opacity', 0);
-    }
-    map.setPaintProperty('bloom', 'circle-opacity', 0);
-    map.setPaintProperty('core', 'circle-radius', only(10));
-    map.setPaintProperty('core', 'circle-opacity', only(0.4));
+  function ringAt(p, r, width, alpha, c) {
+    if (alpha < 0.004) return;
+    ctx.lineWidth = width;
+    ctx.strokeStyle = 'rgba(' + c + ',' + alpha.toFixed(3) + ')';
+    ctx.beginPath(); ctx.arc(p.x, p.y, r, 0, Math.PI * 2); ctx.stroke();
   }
+  function glowAt(p, r, alpha, c) {
+    var g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, r);
+    g.addColorStop(0, 'rgba(' + c + ',' + alpha.toFixed(3) + ')');
+    g.addColorStop(1, 'rgba(' + c + ',0)');
+    ctx.fillStyle = g;
+    ctx.beginPath(); ctx.arc(p.x, p.y, r, 0, Math.PI * 2); ctx.fill();
+  }
+
+  function frame(ts) {
+    draw(ts, false);
+    rafId = requestAnimationFrame(frame);
+  }
+  function drawStill() { draw(0, true); }
+  function animating() { return !(reduceMotion && reduceMotion.matches) && !document.hidden; }
   function startAnimation() {
     if (rafId) cancelAnimationFrame(rafId);
     rafId = null;
-    if (reduceMotion && reduceMotion.matches) { drawStatic(); return; }
+    if (!animating()) { drawStill(); return; }
     rafId = requestAnimationFrame(frame);
   }
+  // when not animating, keep the still rings in place while the map moves
+  map.on('move', function () { if (!rafId) drawStill(); });
   if (reduceMotion && reduceMotion.addEventListener) {
-    reduceMotion.addEventListener('change', function () { if (map.getLayer('ripple0')) startAnimation(); });
+    reduceMotion.addEventListener('change', function () { if (items.length) startAnimation(); });
   }
   document.addEventListener('visibilitychange', function () {
     if (document.hidden && rafId) { cancelAnimationFrame(rafId); rafId = null; }
-    else if (!document.hidden && map.getLayer && map.getLayer('ripple0')) startAnimation();
+    else if (!document.hidden && items.length) startAnimation();
   });
 
   window.addEventListener('resize', function () { /* keep current view */ });

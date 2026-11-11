@@ -14,9 +14,9 @@ This map places the 100 sounds and lets you move through the year. Pick a month 
 
 - Month slider (Jan–Dec), keyboard (← / →, Space to play) and a play button that runs from January to December
 - Three sound types: **Living things** (birds, insects, frogs, deer, wind in trees), **Water** (waves, falls, rivers, drift ice, singing sand), **People** (bells, festivals, trains, crafts and work)
-- Click a point for its name, place, months and a short description
+- Click a point for a photo, its name, place, months and a short description
 - English and Japanese (`?lang=ja`); a month can be set with `?month=1`–`12`
-- Ripple animation stops when the device is set to reduce motion
+- Ripples are drawn on a canvas over the map and stop when the device is set to reduce motion
 
 ### Counts
 
@@ -49,6 +49,7 @@ Year-round: 53. Seasonal sounds by month (including year-round): highest in July
 | `months_basis_ja` | Basis for the months, from the pamphlet's "よく聞ける時期" |
 | `months_estimated` | `true` if the months were inferred from wording such as "autumn" or "early summer" |
 | `description_ja` / `description_en` | Short description written for this map (1–2 sentences) |
+| `image` | Freely licensed photo from Wikipedia / Wikimedia Commons: `url`, `source_page`, `file`, `artist`, `license`, `license_url`, `via`, `article_ja` (`null` if none) |
 
 `data/japan-land.geojson` is the land outline of Japan extracted from Natural Earth 1:10m countries. `data/japan-sea-mask.geojson` is its inverse, used to keep the blank-map tiles on land only.
 
@@ -60,6 +61,7 @@ Year-round: 53. Seasonal sounds by month (including year-round): highest in July
 4. **Sound types**: the official categories were grouped into three. Birds, insects, frogs, mammals, plants and mixed wildlife → Living things; sea and inland water → Water; bells, festivals, industry and transport, and daily life → People. Mixed entries were assigned by their main sound.
 5. **English names**: based on English Wikipedia "100 Soundscapes of Japan", with some edits for readability.
 6. **Descriptions**: written for this map. Photos and text from the pamphlet are not reproduced.
+7. **Photos**: the lead image of a related Japanese Wikipedia article (free licences only), replaced with a Wikimedia Commons search result where the lead image was a map, a logo or a different place. 94 of 100 have a photo. Some show the town or the subject (a bird, a festival) rather than the exact listening spot. The photographer and licence are shown under each photo.
 
 ## Notes
 
@@ -71,6 +73,7 @@ Year-round: 53. Seasonal sounds by month (including year-round): highest in July
 
 - Ministry of the Environment, Japan. 残したい"日本の音風景100選" (overview and pamphlet). https://www.env.go.jp/air/life/nihon_no_oto/index.html
 - Wikipedia. 100 Soundscapes of Japan. https://en.wikipedia.org/wiki/100_Soundscapes_of_Japan
+- Photos: Wikipedia (ja) and Wikimedia Commons. Each photo is used under the licence shown with it (CC0, CC BY, CC BY-SA, public domain and others); see `image` in `data/soundscapes.json`.
 - Base map: 地理院タイル 白地図 (GSI Tiles, blank map), Geospatial Information Authority of Japan. https://maps.gsi.go.jp/development/ichiran.html
 - Base map: Natural Earth (public domain), via world-atlas 2.0.2. https://www.naturalearthdata.com/
 - Map library: MapLibre GL JS 4.7.1
@@ -85,7 +88,7 @@ Year-round: 53. Seasonal sounds by month (including year-round): highest in July
 
 - 1〜12月のスライダー、キーボード（← / →、スペースで再生）、1月から12月までの自動再生
 - 音の種類：生き物（鳥・虫・蛙・鹿・木々の音）／水（波・滝・川・流氷・鳴き砂）／人の営み（鐘・祭り・乗り物・仕事の音）
-- 地点をクリックすると名称、場所、聞ける月、短い説明を表示
+- 地点をクリックすると写真、名称、場所、聞ける月、短い説明を表示
 - 英語と日本語の切り替え（`?lang=ja`）
 - 「動きを減らす」設定の端末では波紋のアニメーションを止めます
 
@@ -96,6 +99,7 @@ Year-round: 53. Seasonal sounds by month (including year-round): highest in July
 3. 緯度経度は、「よく聞けるところ」を国土地理院の地名・住所検索で探して決めました。川・海岸・湿原・町並み・鉄道区間などは代表点です。
 4. 音の種類は100選の分類（鳥、昆虫、海、陸水、鐘、祭りなど）を3つにまとめました。複合のものは主な音で分けています。
 5. 説明文はこの地図のために書いた要約で、パンフレットの写真や文章は転載していません。
+6. 写真は、関連する日本語版Wikipedia記事の代表画像（自由ライセンスのみ）を使い、地図やロゴ、別の場所の画像だった場合はWikimedia Commonsで探して差し替えました（100件中94件）。作者とライセンスは写真の下に表示しています。
 
 ### 注記
 
@@ -107,6 +111,7 @@ Year-round: 53. Seasonal sounds by month (including year-round): highest in July
 
 - 環境省「残したい“日本の音風景100選”」（概要・パンフレット）
 - 背景地図：地理院タイル（白地図）、Natural Earth
+- 写真：Wikipedia（日本語版）・Wikimedia Commons（各写真に記載のライセンス）
 - 配色：[Mapterhorn](https://mapterhorn.com/) のロゴの色
 
 ## License
