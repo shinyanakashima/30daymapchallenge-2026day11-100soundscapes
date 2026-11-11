@@ -12,7 +12,7 @@ On 1 July 1996, Japan's Environment Agency (now the Ministry of the Environment)
 
 This map places the 100 sounds and lets you move through the year. Pick a month and the sounds you can hear then pulse with ripples; sounds heard all year stay lit; the rest fade.
 
-- Month slider (Jan–Dec), keyboard (← / →, Space to play) and a play button that runs from January to December
+- A month dial: twelve months in a ring, January at the top. Click or drag around it to change the month. Bars around the ring show how many seasonal sounds each month has, by type. The play button in the centre runs from January to December; keyboard ← / → (or ↑ / ↓, Home / End on the dial) and Space also work
 - Three sound types: **Living things** (birds, insects, frogs, deer, wind in trees), **Water** (waves, falls, rivers, drift ice, singing sand), **People** (bells, festivals, trains, crafts and work)
 - Click a point for a photo, its name, place, months and a short description
 - English and Japanese (`?lang=ja`); a month can be set with `?month=1`–`12`
@@ -86,7 +86,7 @@ Year-round: 53. Seasonal sounds by month (including year-round): highest in July
 1996年7月1日、環境庁（現・環境省）は全国738件の応募から「残したい日本の音風景100選」を選びました。2026年で30年になります。
 この地図では100の音を地図に置き、月を切り替えると、その月に聞ける音が波紋で脈打ちます。通年の音は常に表示し、ほかの月の音は薄くなります。
 
-- 1〜12月のスライダー、キーボード（← / →、スペースで再生）、1月から12月までの自動再生
+- 月のダイヤル：12か月を円に並べ、1月を真上に置いています。クリックかドラッグで月を切り替えます。外側の棒は、月ごとの季節の音の数を種類別に積み上げたものです。中央の再生ボタンで1月から12月まで自動で進みます。キーボード（← / →、スペースで再生）にも対応しています
 - 音の種類：生き物（鳥・虫・蛙・鹿・木々の音）／水（波・滝・川・流氷・鳴き砂）／人の営み（鐘・祭り・乗り物・仕事の音）
 - 地点をクリックすると写真、名称、場所、聞ける月、短い説明を表示
 - 英語と日本語の切り替え（`?lang=ja`）

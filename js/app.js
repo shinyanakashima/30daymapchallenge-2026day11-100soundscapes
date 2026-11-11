@@ -38,7 +38,7 @@
       about_html:
         '<h3>About this map</h3>' +
         '<p>On 1 July 1996, Japan’s Environment Agency (now the Ministry of the Environment) selected the <b>100 Soundscapes of Japan</b> from 738 entries sent in from across the country: sounds that local people value and want to pass on. 2026 marks 30 years since the selection.</p>' +
-        '<p>Each sound is placed on the map and sorted into three types: living things (birds, insects, frogs, deer, wind in trees), water (waves, falls, rivers, drift ice, singing sand) and people (bells, festivals, trains, crafts and work). Move the slider to see which sounds are in season. Sounds that can be heard all year are always shown.</p>' +
+        '<p>Each sound is placed on the map and sorted into three types: living things (birds, insects, frogs, deer, wind in trees), water (waves, falls, rivers, drift ice, singing sand) and people (bells, festivals, trains, crafts and work). Turn the month dial to see which sounds are in season; the bars around it show how many seasonal sounds each month has. Sounds that can be heard all year are always shown.</p>' +
         '<h3>Notes</h3><ul>' +
         '<li>The list was selected in 1996. Some sounds may no longer be heard in the same way today.</li>' +
         '<li>Points are representative locations. Rivers, coasts, wetlands and towns are shown with one point.</li>' +
@@ -86,7 +86,7 @@
       about_html:
         '<h3>この地図について</h3>' +
         '<p>1996年7月1日、環境庁（現・環境省）は全国から寄せられた738件の応募の中から「残したい日本の音風景100選」を選びました。地域の人々が大切にし、将来に残したいと願う音のある風景です。2026年で選定から30年になります。</p>' +
-        '<p>100の音を地図に置き、生き物（鳥・虫・蛙・鹿・木々の音）、水（波・滝・川・流氷・鳴き砂）、人の営み（鐘・祭り・乗り物・仕事の音）の3つに分けました。スライダーで月を切り替えると、その月に聞ける音が脈打ちます。通年の音は常に表示しています。</p>' +
+        '<p>100の音を地図に置き、生き物（鳥・虫・蛙・鹿・木々の音）、水（波・滝・川・流氷・鳴き砂）、人の営み（鐘・祭り・乗り物・仕事の音）の3つに分けました。月のダイヤルを回すと、その月に聞ける音が脈打ちます。ダイヤルの外側の棒は、月ごとの季節の音の数です。通年の音は常に表示しています。</p>' +
         '<h3>注記</h3><ul>' +
         '<li>100選は1996年の選定です。今も同じように聞けるとは限りません。</li>' +
         '<li>地点は代表点です。川・海岸・湿原・町並みなど範囲の広いものも1点で示しています。</li>' +
@@ -140,8 +140,7 @@
   var map;
 
   var $ = function (id) { return document.getElementById(id); };
-  var slider = $('month');
-  slider.value = state.month;
+  var dial = $('dial');
 
   // ---------- map ----------
   map = new maplibregl.Map({
@@ -191,8 +190,8 @@
 
   function fitPadding() {
     var w = window.innerWidth;
-    if (w <= 720) return { top: 120, bottom: 120, left: 16, right: 16 };
-    return { top: 50, bottom: 110, left: 240, right: 200 };
+    if (w <= 720) return { top: 150, bottom: 225, left: 16, right: 16 };
+    return { top: 40, bottom: 40, left: 260, right: 280 };
   }
 
   function catColor() {
@@ -268,6 +267,7 @@
           if (attrib) { attrib.classList.remove('maplibregl-compact-show'); attrib.removeAttribute('open'); }
         }
         updateCounts();
+        buildDial();
         applyMonth();
         startAnimation();
       });
@@ -281,7 +281,6 @@
 
   function applyMonth() {
     var m = state.month;
-    slider.value = m;
     var nSeason = 0, nYear = 0;
     items.forEach(function (it) {
       var s = stateOf(it, m);
@@ -293,8 +292,9 @@
     $('countMonth').textContent = t.monthName(m);
     $('countTotal').textContent = nSeason + nYear;
     $('countBreak').textContent = t.breakdown(nSeason, nYear);
-    slider.setAttribute('aria-valuetext', t.monthName(m) + ': ' + (nSeason + nYear) + ' ' + t.countUnit);
-    Array.prototype.forEach.call($('ticks').children, function (b, i) { b.classList.toggle('on', i + 1 === m); });
+    dial.setAttribute('aria-valuenow', m);
+    dial.setAttribute('aria-valuetext', t.monthName(m) + ': ' + (nSeason + nYear) + ' ' + t.countUnit);
+    updateDial();
     if (state.selected) renderCard();
     refreshActive();
     if (!rafId) drawStill();
@@ -306,22 +306,119 @@
     applyMonth();
   }
 
-  function buildTicks() {
-    var wrap = $('ticks');
-    wrap.innerHTML = '';
-    var t = T[state.lang];
-    for (var m = 1; m <= 12; m++) {
-      var b = document.createElement('button');
-      b.type = 'button';
-      b.tabIndex = -1;
-      b.textContent = t.monthShort(m);
-      b.setAttribute('aria-label', t.monthName(m));
-      b.addEventListener('click', (function (mm) { return function () { stopPlay(); setMonth(mm); }; })(m));
-      wrap.appendChild(b);
-    }
+  // ---------- month dial ----------
+  // A ring of twelve months, January at the top, running clockwise.
+  // Bars outside the ring show how many seasonal sounds each month has, by type.
+  var SPECTRUM = ['#03d8a0', '#164ab7', '#5a20c2', '#7f06ff', '#bf01ff', '#ff008f', '#ea0043', '#ff7b00', '#f4ff00', '#c1ff00', '#99ff00', '#41ff00'];
+  var SVGNS = 'http://www.w3.org/2000/svg';
+  var R_IN = 64, R_OUT = 80, R_LABEL = 72, R_BAR = 84, BAR_UNIT = 1.3;
+
+  function polar(r, deg) {
+    var a = (deg - 90) * Math.PI / 180;
+    return [r * Math.cos(a), r * Math.sin(a)];
+  }
+  function sector(r1, r2, d1, d2) {
+    var p1 = polar(r2, d1), p2 = polar(r2, d2), p3 = polar(r1, d2), p4 = polar(r1, d1);
+    var large = d2 - d1 > 180 ? 1 : 0;
+    return 'M' + p1 + 'A' + r2 + ',' + r2 + ' 0 ' + large + ' 1 ' + p2 +
+      'L' + p3 + 'A' + r1 + ',' + r1 + ' 0 ' + large + ' 0 ' + p4 + 'Z';
+  }
+  function el(name, attrs, parent) {
+    var e = document.createElementNS(SVGNS, name);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
   }
 
-  slider.addEventListener('input', function () { stopPlay(); setMonth(parseInt(slider.value, 10)); });
+  function buildDial() {
+    var svg = $('dialSvg');
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    var t = T[state.lang];
+    var defs = el('defs', {}, svg);
+    var f = el('filter', { id: 'dialGlow', x: '-50%', y: '-50%', width: '200%', height: '200%' }, defs);
+    el('feGaussianBlur', { stdDeviation: '3', result: 'b' }, f);
+    var mg = el('feMerge', {}, f);
+    el('feMergeNode', { in: 'b' }, mg);
+    el('feMergeNode', { in: 'SourceGraphic' }, mg);
+    // bars: seasonal sounds per month, stacked by type (only types switched on)
+    var bars = el('g', { 'class': 'dial-bars' }, svg);
+    for (var m = 1; m <= 12; m++) {
+      var c = (m - 1) * 30, r = R_BAR;
+      ['living', 'water', 'people'].forEach(function (cat) {
+        if (!state.cats[cat]) return;
+        var n = items.filter(function (it) { return it.category === cat && !it.all_year && it.months.indexOf(m) >= 0; }).length;
+        if (!n) return;
+        var len = n * BAR_UNIT;
+        el('path', { d: sector(r, r + len, c - 9, c + 9), fill: COLORS[cat], 'class': 'bar m' + m }, bars);
+        r += len;
+      });
+    }
+    // month band and labels
+    var band = el('g', {}, svg);
+    for (var mm = 1; mm <= 12; mm++) {
+      var cc = (mm - 1) * 30;
+      el('path', { d: sector(R_IN, R_OUT, cc - 14, cc + 14), fill: SPECTRUM[mm - 1], 'class': 'seg', 'data-m': mm }, band);
+      var lp = polar(R_LABEL, cc);
+      var tx = el('text', { x: lp[0].toFixed(1), y: lp[1].toFixed(1), 'class': 'lbl', 'data-m': mm, 'text-anchor': 'middle', 'dominant-baseline': 'central' }, band);
+      tx.textContent = state.lang === 'ja' ? String(mm) : MONTHS_EN[mm - 1].charAt(0);
+    }
+    // marker on the selected month, rotated with a transition
+    var mk = el('g', { id: 'dialMarker' }, svg);
+    el('path', { d: sector(R_IN - 3, R_OUT + 3, -15, 15), fill: 'none', stroke: '#fff', 'stroke-width': 1.6, filter: 'url(#dialGlow)' }, mk);
+    markerAngle = null;
+    updateDial();
+  }
+
+  var markerAngle = null;
+  function updateDial() {
+    var svg = $('dialSvg');
+    if (!svg.firstChild) return;
+    var m = state.month;
+    Array.prototype.forEach.call(svg.querySelectorAll('.seg'), function (p) {
+      p.classList.toggle('on', +p.getAttribute('data-m') === m);
+    });
+    Array.prototype.forEach.call(svg.querySelectorAll('.lbl'), function (p) {
+      p.classList.toggle('on', +p.getAttribute('data-m') === m);
+    });
+    Array.prototype.forEach.call(svg.querySelectorAll('.bar'), function (p) {
+      p.classList.toggle('on', p.classList.contains('m' + m));
+    });
+    // turn the shortest way round, so Dec -> Jan moves one step forward
+    var target = (m - 1) * 30;
+    if (markerAngle === null) markerAngle = target;
+    else {
+      var d = ((target - markerAngle) % 360 + 540) % 360 - 180;
+      markerAngle += d;
+    }
+    $('dialMarker').style.transform = 'rotate(' + markerAngle + 'deg)';
+  }
+
+  function monthFromPoint(e) {
+    var box = dial.getBoundingClientRect();
+    var x = (e.clientX - box.left) / box.width * 240 - 120;
+    var y = (e.clientY - box.top) / box.height * 240 - 120;
+    if (Math.hypot(x, y) < 44) return null; // centre belongs to the play button
+    var deg = (Math.atan2(y, x) * 180 / Math.PI + 90 + 360) % 360;
+    return Math.floor(((deg + 15) % 360) / 30) + 1;
+  }
+  var dragging = false;
+  dial.addEventListener('pointerdown', function (e) {
+    var m = monthFromPoint(e);
+    if (m === null) return;
+    dragging = true;
+    try { dial.setPointerCapture(e.pointerId); } catch (err) { /* ignore */ }
+    stopPlay();
+    if (m !== state.month) setMonth(m);
+    e.preventDefault();
+  });
+  dial.addEventListener('pointermove', function (e) {
+    if (!dragging) return;
+    var m = monthFromPoint(e);
+    if (m !== null && m !== state.month) setMonth(m);
+  });
+  ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(function (ev) {
+    dial.addEventListener(ev, function () { dragging = false; });
+  });
 
   // ---------- play ----------
   var playTimer = null;
@@ -354,10 +451,11 @@
   document.addEventListener('keydown', function (e) {
     var tag = (e.target && e.target.tagName) || '';
     if (e.key === 'Escape') { select(null); closeAbout(); return; }
-    if (e.target === slider) return; // native range handles arrows
     if (tag === 'INPUT' || tag === 'TEXTAREA') return;
-    if (e.key === 'ArrowRight') { stopPlay(); setMonth(state.month + 1); e.preventDefault(); }
-    else if (e.key === 'ArrowLeft') { stopPlay(); setMonth(state.month - 1); e.preventDefault(); }
+    if (e.key === 'ArrowRight' || (e.target === dial && e.key === 'ArrowUp')) { stopPlay(); setMonth(state.month + 1); e.preventDefault(); }
+    else if (e.key === 'ArrowLeft' || (e.target === dial && e.key === 'ArrowDown')) { stopPlay(); setMonth(state.month - 1); e.preventDefault(); }
+    else if (e.target === dial && e.key === 'Home') { stopPlay(); setMonth(1); e.preventDefault(); }
+    else if (e.target === dial && e.key === 'End') { stopPlay(); setMonth(12); e.preventDefault(); }
     else if ((e.key === ' ' || e.key === 'Spacebar') && tag !== 'BUTTON') { $('play').click(); e.preventDefault(); }
   });
 
@@ -368,6 +466,7 @@
       state.cats[c] = !state.cats[c];
       b.setAttribute('aria-pressed', state.cats[c] ? 'true' : 'false');
       if (state.selected && !state.cats[byId[state.selected].category]) select(null);
+      buildDial();
       applyMonth();
     });
   });
@@ -465,12 +564,12 @@
       if (typeof v === 'string') el.textContent = v;
     });
     document.querySelector('.filters').setAttribute('aria-label', t.filterLabel);
-    slider.setAttribute('aria-label', t.monthLabel);
+    dial.setAttribute('aria-label', t.monthLabel);
     $('play').querySelector('.sr').textContent = state.playing ? t.pause : t.play;
     Array.prototype.forEach.call(document.querySelectorAll('.lang button'), function (b) {
       b.setAttribute('aria-pressed', b.getAttribute('data-lang') === state.lang ? 'true' : 'false');
     });
-    buildTicks();
+    if (items.length) buildDial();
     if (!$('about').hidden) $('aboutBody').innerHTML = t.about_html;
     if (items.length) applyMonth();
   }

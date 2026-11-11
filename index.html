@@ -40,22 +40,21 @@
   <button type="button" class="about-btn" aria-expanded="false" aria-controls="about" data-i18n="about">About &amp; notes</button>
 </header>
 
-<aside class="panel count-panel" aria-live="polite">
-  <div class="count-month" id="countMonth">November</div>
-  <div class="count-big"><span id="countTotal">0</span><span class="count-unit" data-i18n="countUnit">sounds</span></div>
-  <div class="count-break" id="countBreak"></div>
-</aside>
-
-<section class="panel time-panel" aria-label="Month">
-  <button type="button" id="play" class="play" aria-pressed="false">
-    <svg viewBox="0 0 24 24" aria-hidden="true" class="i-play"><path d="M8 5v14l11-7z"/></svg>
-    <svg viewBox="0 0 24 24" aria-hidden="true" class="i-pause"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
-    <span class="sr" data-i18n="play">Play months</span>
-  </button>
-  <div class="slider-wrap">
-    <input type="range" id="month" min="1" max="12" step="1" value="11" aria-label="Month">
-    <div class="ticks" id="ticks" aria-hidden="true"></div>
+<section class="panel dial-panel" aria-label="Month">
+  <div class="dial" id="dial" role="slider" tabindex="0" aria-valuemin="1" aria-valuemax="12" aria-valuenow="11" aria-label="Month">
+    <svg id="dialSvg" viewBox="-120 -120 240 240" aria-hidden="true"></svg>
   </div>
+  <div class="dial-center" aria-live="polite">
+    <div class="count-month" id="countMonth">November</div>
+    <div class="count-big" id="countTotal">0</div>
+    <div class="count-unit" data-i18n="countUnit">sounds</div>
+    <button type="button" id="play" class="play" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="i-play"><path d="M8 5v14l11-7z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="i-pause"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+      <span class="sr" data-i18n="play">Play months</span>
+    </button>
+  </div>
+  <div class="count-break" id="countBreak"></div>
 </section>
 
 <section id="card" class="panel card" hidden aria-live="polite">
